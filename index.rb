@@ -1,29 +1,34 @@
-# strings
-puts "hello  world"; puts "this is the begining";
+# print method
+# print method dose not create a line break at the end of and output like "put" dose
 
-puts "I'm alive and well!";  
+# print no seperation and line break
+# print "Hello"
+# print "World"
 
+# puts
+puts "Hello"
+puts "World"
 
-puts "I bought 5 dollars at the store."
-puts "I made $65 or a profit of 25%!"
-
-# numbers
-
-puts 5
-puts 3.14159
-
-puts 4 + 3 
-
-# concatenation
-puts "4" + "3"
+# To create separation betweeen print
+print "Hello "
+print "World "
+print "are now seperated"
 
 
-puts
-puts
-puts
 
-puts "See, there is a bunch of line brakes above";
+print "Hello\n"
 
-3.times { puts } 
+# or
 
-puts "3 times puts";
+print "Hello"
+print  " "
+print "World"
+
+
+print  "\n"
+
+
+# line break between
+print "first"
+print "\n"
+print "second"
