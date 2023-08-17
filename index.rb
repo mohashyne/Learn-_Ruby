@@ -1,34 +1,11 @@
-# print method
-# print method dose not create a line break at the end of and output like "put" dose
+# p method : In Ruby, the p method is used for debugging and printing the value of an expression. It's often used to inspect the content of variables, objects, or expressions during program execution. The p method outputs the value along with its data type.
 
-# print no seperation and line break
-# print "Hello"
-# print "World"
-
-# puts
-puts "Hello"
-puts "World"
-
-# To create separation betweeen print
-print "Hello "
-print "World "
-print "are now seperated"
+puts "Muhammad Salihu"
+p "Muhammad Salihu"
 
 
+puts "Hi  this is a
+big line break"
 
-print "Hello\n"
-
-# or
-
-print "Hello"
-print  " "
-print "World"
-
-
-print  "\n"
-
-
-# line break between
-print "first"
-print "\n"
-print "second"
+p "Hi  this is a
+big line break"
