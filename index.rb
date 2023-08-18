@@ -1,11 +1,34 @@
-# p method : In Ruby, the p method is used for debugging and printing the value of an expression. It's often used to inspect the content of variables, objects, or expressions during program execution. The p method outputs the value along with its data type.
+# Arithmetic expressions
 
-puts "Muhammad Salihu"
-p "Muhammad Salihu"
+# add
+p 1 + 4
 
+# subtract
+p 10 - 6
 
-puts "Hi  this is a
-big line break"
+# multiply
+p 3 * 4
 
-p "Hi  this is a
-big line break"
+# divide
+p 10 / 5
+p 12 / 5
+
+# float , to float you need to make one of the vale a decimal  point
+p 12.0 / 5 
+p 0.5 / 2
+
+# exponent
+p 2 ** 4
+
+# modulo
+p 5 % 2
+
+# class
+p 5.class
+p 0.5.class
+
+# methods
+p 10.9.to_i
+p 10.5.floor
+p 10.5.ceil
+p 3.14159.round(2)
