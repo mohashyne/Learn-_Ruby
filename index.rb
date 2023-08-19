@@ -1,14 +1,23 @@
-name = "Muhammd"
-puts "Hello #{name}!"   
+#  parllel var assignment
 
-last_name = "salihu"
-handsome = true
-age = 23 + 1
+# a = 10
+# b = 20
+# c = 30
 
-puts name , handsome, age=75
+# instead you can do it this other  way
 
-puts name + " " + last_name
+a, b, c = 10, 20, 30
 
-puts "#{name} #{last_name} is #{age} years old"
 
-puts "He is #{age + 5} years old"
+puts a, b, c
+
+
+# swapping variables
+
+c, d = 10, 20
+
+puts c, d
+
+c, d = d, c
+
+puts "swapped #{c} for c","And swapped #{d} for d"
