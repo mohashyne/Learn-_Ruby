@@ -1,14 +1,14 @@
-# this is a comment
+name = "Muhammd"
+puts "Hello #{name}!"   
 
-# put "this as a comment"
+last_name = "salihu"
+handsome = true
+age = 23 + 1
 
+puts name , handsome, age=75
 
-=begin
-put "i just wrote"
-put "a lot of comments"
-put "in my code"
-=end
+puts name + " " + last_name
 
-# put "i just wrote"
-# put "a lot of comments"
-# put "in my code"
+puts "#{name} #{last_name} is #{age} years old"
+
+puts "He is #{age + 5} years old"
