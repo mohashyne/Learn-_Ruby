@@ -1,19 +1,15 @@
-str = "5"
-p str
-p str.class
+p 5 < 10
 
-p str.to_i.class  # this is a temporary operation and not saved
+p 10 > 12
 
-p str # "5"   # still a string
+p 12 == 12 # true
 
+a = 10
 
-# to commit
+p 10 >= a  # true
 
-str = str.to_i
+handsome = true
+stupid = false
 
-p  "#{str} is now converted to an #{str.class}"
-
-#  convert to a float
-str = str.to_f
-
-p  "#{str} is now converted to a #{str.class}"
+p handsome.class  # TrueClass
+p stupid.class    # FalseClass
