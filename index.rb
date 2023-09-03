@@ -1,16 +1,19 @@
-# class
+str = "5"
+p str
+p str.class
 
-p 5.class  # fixnum
-p 0.class
-p 100.next #==> 101
-p -837
+p str.to_i.class  # this is a temporary operation and not saved
 
-#  floating numbers
-p 5.987.class
-p 2.71.class
-p -10.23.next  # error output
-#if  you use .next on a  float it gives you error , because it dosn't exist on a float
+p str # "5"   # still a string
 
 
-p 99999999999999999999999999999999999999999999.class # bignum
+# to commit
 
+str = str.to_i
+
+p  "#{str} is now converted to an #{str.class}"
+
+#  convert to a float
+str = str.to_f
+
+p  "#{str} is now converted to a #{str.class}"
