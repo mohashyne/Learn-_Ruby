@@ -2,6 +2,7 @@
 
 num = 5
 num_string = "5"
+num_float = 5.0
 
 
 p num == num_string.to_i  # true
@@ -9,6 +10,7 @@ p num == num_string.to_f  # true
 p 5 == num_string         # false
 p num == num_string       # false
 p num >= num_string.to_i  # true
+p 5 == 5.0      # true
 
 
 
