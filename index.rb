@@ -1,17 +1,16 @@
-# gets
-# In Ruby, the gets method is used for reading input from the user through the command line or console. It stands for "get string" and is commonly used for receiving text input.
+# class
 
-# Here's a basic example of how gets can be used to get user input and store it in a variable:
-# irb(main):018:0> name = gets
-# Muhammd
-# => "Muhammd\n"
-# irb(main):019:0> puts "Yes #{name}"
-# Yes Muhammd
-# => nil                                           
-# irb(main):020:0> 
+p 5.class  # fixnum
+p 0.class
+p 100.next #==> 101
+p -837
 
-# The user types in their name and presses enter. The gets method reads the input and stores it in the name variable. The newline character (\n) is included in the string, so we use the chomp method to remove it.
-print "Please enter your name: "
-user_input = gets.chomp # gets reads user input, and chomp removes the trailing newline character
+#  floating numbers
+p 5.987.class
+p 2.71.class
+p -10.23.next  # error output
+#if  you use .next on a  float it gives you error , because it dosn't exist on a float
 
-puts "Hello, #{user_input}!"
+
+p 99999999999999999999999999999999999999999999.class # bignum
+
