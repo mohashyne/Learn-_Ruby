@@ -9,8 +9,18 @@ p num == num_string.to_i  # true
 p num == num_string.to_f  # true
 p 5 == num_string         # false
 p num == num_string       # false
+p 5 == 5.0 
+
+# greater than equal to
 p num >= num_string.to_i  # true
-p 5 == 5.0      # true
+
+# less than equal to
+p num <= num_string.to_i  # true
+    
+
+# not equal to
+p 5 != 5.0     # false
+
 
 
 
