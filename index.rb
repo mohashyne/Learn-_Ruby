@@ -1,15 +1,23 @@
-p 5 < 10
+p 10.odd?  #FalseClass
+p 11.odd?  #TrueClass   
 
-p 10 > 12
+p 2.even?  #TrueClass
 
-p 12 == 12 # true
 
-a = 10
+numbers = [10, 20, 15, 2, 3, 5]
 
-p 10 >= a  # true
+# print odd numbers
+numbers.each do |n|
+    if n.odd?
+        puts "#{n} is an odd number"
+    else n.even?
+        puts "#{n} is an even number"
+    end
+end
 
-handsome = true
-stupid = false
 
-p handsome.class  # TrueClass
-p stupid.class    # FalseClass
+# p 2.99.odd? #undefine/error because its a float
+
+p 2.99.to_i
+
+
