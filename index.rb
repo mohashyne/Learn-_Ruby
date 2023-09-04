@@ -1,14 +1,23 @@
-p 3.between?(1, 5)  # true (3 is between 1 and 5) it checks the min and max
-p 6.between?(1, 5) # false
-p 'cat'.between?('ant', 'dog')  # true
-p 'gnu'.between?('ant', 'dog')   # false
-p 'apple'.between?('ant', 'dog')    # false  
+# float methods
 
+# floor
+p 3.5.floor # 3
 
+# ceil
+p 3.5.ceil # 4
+p 3.14.ceil # 4
 
+# round
+p 3.14159.round # 3 , this  follows the mathematical rule 
+# if after the decimal point  is less  than .5  it dosn't round up
+# it also rounds the  number of digits you want to see after the decimal point
+p 3.6 # 4
+p 3.14159.round(2) # 3.14
+p 3.14159.round(3) # 3.142 , 1 is round to 2 because 5 is next to it
 
-# # loop through a number downto
-# p 5.downto(1) { |n| print n, ".. " } 
+# abs
+p 35.67.abs # 35.67
+p -35.67.abs # 35.67
+p 35.67.abs.class # Float
+p -50.abs # 50
 
-# # print  n if n between  7, 9
-# p 1.upto(9) { |j| print j, ".. "}
