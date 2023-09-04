@@ -1,19 +1,28 @@
-# space = " "
-# p space.length # 1
+# multiline string
+# sometimes we use it when writing  poetry
 
-# empty = ""
-# p empty.length # 0
+words = <<MLS 
+    This will be a multi-line string
+     when it is output.
 
-# p empty.class # string
-# p empty.empty? # true
-# p space.empty? # false
+     
+The tabs will also be preserved.
+Just you watch.
+Goodbye!
+MLS
 
-# ultimate syntax to create a string
-p String.new # ""
-p String.new.class # String
+print words
 
-name = String.new("Muhammd")
 
-p name # "Muhammd"
+reminder = <<CODING_PARTNER
 
-p 5.to_s # "5"
+
+Hey Coding Partner,
+
+I hope you're doing well. I wanted to touch base regarding our group meetings. I think it's essential for us to stick to the Microverse rules during our discussions. It helps us stay on track and maintain a productive environment. If there's anything specific you'd like to discuss or any feedback you have, please feel free to share it. Let's make sure our meetings are as effective as possible.
+
+Thanks for your understanding.
+
+CODING_PARTNER
+
+print reminder
