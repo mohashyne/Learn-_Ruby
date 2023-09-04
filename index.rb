@@ -1,20 +1,14 @@
-# Arithmetic method
-
-# diff input with same output
-p 1.next()
-p 1 + 1
-p 1.+(1)
-p 1.+1
+p 3.between?(1, 5)  # true (3 is between 1 and 5) it checks the min and max
+p 6.between?(1, 5) # false
+p 'cat'.between?('ant', 'dog')  # true
+p 'gnu'.between?('ant', 'dog')   # false
+p 'apple'.between?('ant', 'dog')    # false  
 
 
-# example 2
-p 2.next()
-p 1 + 2
-p 1.+(2)
-p 1.+2
 
-# example 3
-p 10 % 3
-p 10.%(3)
-p 1.modulo(3)
 
+# # loop through a number downto
+# p 5.downto(1) { |n| print n, ".. " } 
+
+# # print  n if n between  7, 9
+# p 1.upto(9) { |j| print j, ".. "}
