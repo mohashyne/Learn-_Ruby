@@ -1,28 +1,12 @@
-# multiline string
-# sometimes we use it when writing  poetry
+# puts "This is 'real' "
 
-words = <<MLS 
-    This will be a multi-line string
-     when it is output.
-
-     
-The tabs will also be preserved.
-Just you watch.
-Goodbye!
-MLS
-
-print words
+# # to same qoutes work
+# puts "I \"got\" you"
+# puts 'I \'got\' you'
 
 
-reminder = <<CODING_PARTNER
+# to print a new line
+puts "this is a\nnew line break"
 
-
-Hey Coding Partner,
-
-I hope you're doing well. I wanted to touch base regarding our group meetings. I think it's essential for us to stick to the Microverse rules during our discussions. It helps us stay on track and maintain a productive environment. If there's anything specific you'd like to discuss or any feedback you have, please feel free to share it. Let's make sure our meetings are as effective as possible.
-
-Thanks for your understanding.
-
-CODING_PARTNER
-
-print reminder
+# to print a tab
+puts "\tthis is a tab"
