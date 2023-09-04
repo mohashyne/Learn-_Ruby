@@ -1,15 +1,12 @@
-a = "HELLO"
-b = "hello"
-c = "Hello"
-e = "a"
-f = "b"
+first_name = "Muhammad "
+last_name = "Ali"
 
-puts a == b
-puts a == c
-puts b == c
+# puts first_name + " " +last_name
 
-puts a != b
-puts a < b
-puts b > c
+p first_name << last_name << " Aminu"
 
-puts e < f
+# puts first_name.concat(last_name)
+p  first_name # Muhammad Ali , overwrites first_name
+
+
+# puts first_name.prepend(last_name) # Ali Muhammad
