@@ -1,12 +1,7 @@
-# puts "This is 'real' "
+# single qoute, line breaks don't work in single qoutes  annd dose nnot interpolate
+# double qoute, line breaks work in double qoutes
 
-# # to same qoutes work
-# puts "I \"got\" you"
-# puts 'I \'got\' you'
-
-
-# to print a new line
-puts "this is a\nnew line break"
-
-# to print a tab
-puts "\tthis is a tab"
+puts "Hello World"
+puts 'Hello World'
+puts "Hello\nWorld"
+puts 'Hello\nWorld' # Hello\nWorld

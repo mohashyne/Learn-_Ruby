@@ -1,5 +1,6 @@
-puts "This is 'real' "
-
-# # to same qoutes work
-# puts "I \"got\" you"
-# puts 'I \'got\' you'
+puts "Hello World"
+puts 'Hello World'
+puts "Hello\nWorld"
+puts 'Hello\nWorld'
+puts "Hello World".length
+puts "Hello World".upcase
