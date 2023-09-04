@@ -1,7 +1,15 @@
-# single qoute, line breaks don't work in single qoutes  annd dose nnot interpolate
-# double qoute, line breaks work in double qoutes
+a = "HELLO"
+b = "hello"
+c = "Hello"
+e = "a"
+f = "b"
 
-puts "Hello World"
-puts 'Hello World'
-puts "Hello\nWorld"
-puts 'Hello\nWorld' # Hello\nWorld
+puts a == b
+puts a == c
+puts b == c
+
+puts a != b
+puts a < b
+puts b > c
+
+puts e < f
