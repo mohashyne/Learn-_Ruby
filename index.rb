@@ -1,24 +1,23 @@
-# methods are designed to be re-used
-# methods is defined with set of ruby statments
-# methods are defined with def keyword
-# def means define
+# local var is local to that method only
 
+expression = "Outside Express"
+ 
 def intro_myself
+    name = "Muhammad"
+    expression = "Inside Express"
 
     puts "Hello World"
-    puts "My name is Muhammad"
+    puts "My name is #{name}"
     puts "I am learning Ruby"
     puts "I am enjoying it"
     puts "I am going to be Ruby developer soon"
-    puts
+    puts "This a an #{expression}"
+
+puts
 
 end
 
-intro_myself()
-intro_myself()
-intro_myself()
+intro_myself
+puts expression
 
-puts ".........................................."
-
-# Same as
-3.times {intro_myself()}
+# puts name # undefined local variable or method `name' for main:Object (NameError)
