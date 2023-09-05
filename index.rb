@@ -1,9 +1,17 @@
-fact = "I Love blueberry pie"
+# Capitalize
+puts "hello".capitalize # "Hello"
+puts "heLLo".capitalize # "Hello"
+puts "HELLO".capitalize # "Hello"
+puts "123ABC".capitalize # "123abc"
+puts "abc123".capitalize # "Abc123"
+puts "abc123".capitalize.class # String
 
-fact[7, 4] = "rasp"
-p fact  # "I Love raspberry pie"
+# upcase and downcase
+puts "hello".upcase # "HELLO"
+puts "blah blah blah".upcase #  BLAH BLAH BLAH
+puts "HELLO".downcase # "hello"
 
-puts
-
-fact[7..4] = "redi"
-p fact  # "I Love rediberry pie"
+# swapcase : its swaps upcase to downcase and vice-versa
+puts "heLLo".swapcase # "HEllO"
+puts "123ABC".swapcase # "123abc"
+puts "abc123".swapcase # "ABC123"
