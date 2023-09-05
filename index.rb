@@ -1,6 +1,15 @@
-# reverse
-puts "hello".reverse
-puts "can i come home?".reverse # ?emoh emoc i nac
-puts "?emoh emoc i nac".reverse # can i come home?
-puts [1,2,6].reverse # 6,2,1   
+  word = "hello"
+  p word.capitalize # "Hello" , not modified , just in random memory
+  p word  # "hello"
 
+  word = word.capitalize # permanet
+    p word  # "Hello"
+
+# Bang Method
+ title = "mrs"
+    title.capitalize! # permanet
+    p title # "Mrs"
+
+
+title.upcase!
+p title # "MRS"
