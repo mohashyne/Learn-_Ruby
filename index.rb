@@ -1,23 +1,22 @@
-# local var is local to that method only
+# parameter
 
-expression = "Outside Express"
- 
-def intro_myself
-    name = "Muhammad"
-    expression = "Inside Express"
-
-    puts "Hello World"
-    puts "My name is #{name}"
-    puts "I am learning Ruby"
-    puts "I am enjoying it"
-    puts "I am going to be Ruby developer soon"
-    puts "This a an #{expression}"
-
-puts
-
+def praise_person(name)
+    puts "#{name} is amazing"
+    puts "#{name} is talented"
+    puts "#{name} is brilliant"
 end
 
-intro_myself
-puts expression
+praise_person("Muhammad")
+praise_person("Hassan")
+praise_person("Umar")
 
-# puts name # undefined local variable or method `name' for main:Object (NameError)
+# output
+# Muhammad is amazing
+# Muhammad is talented
+# Muhammad is brilliant
+# Hassan is amazing
+# Hassan is talented
+# Hassan is brilliant
+# Umar is amazing
+# Umar is talented
+# Umar is brilliant
