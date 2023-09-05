@@ -1,12 +1,9 @@
-story = "Once upon a time in a land, where programmers laugh"
+fact = "I Love blueberry pie"
 
-# two .. (char 28 is inclusive)
-p story[17..28] # "in a land, w"
-p story.slice(17..28)  # "in a land, w"
+fact[7, 4] = "rasp"
+p fact  # "I Love raspberry pie"
 
-# two .. (char 28 is Exclusive)
-p story[17...28] # "in a land, "
-p story.slice(17...28)  # "in a land, "
-p story[17..100] # "in a land, where programmers laugh"
-p story[17..-9]  # "in a land, where programme"
+puts
 
+fact[7..4] = "redi"
+p fact  # "I Love rediberry pie"
