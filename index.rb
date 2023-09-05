@@ -9,7 +9,16 @@ def intro_myself
     puts "My name is Muhammad"
     puts "I am learning Ruby"
     puts "I am enjoying it"
+    puts "I am going to be Ruby developer soon"
+    puts
 
 end
 
+intro_myself()
+intro_myself()
+intro_myself()
+
+puts ".........................................."
+
+# Same as
 3.times {intro_myself()}
