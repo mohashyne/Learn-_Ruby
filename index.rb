@@ -1,17 +1,24 @@
-  word = "hello"
-  p word.capitalize # "Hello" , not modified , just in random memory
-  p word  # "hello"
+# include
 
-  word = word.capitalize # permanet
-    p word  # "Hello"
+name = "Muhammad Salihu"
 
-# Bang Method
- title = "mrs"
-    title.capitalize! # permanet
-    p title # "Mrs"
+p name.include?("Salihu")
+p name.include?("Salih")
 
+# it is case sensitive
+p name.include?("s")
 
-title.upcase!
-p title # "MRS"
+# .upcase or .downcase to have  consistency  when checking
+p name.upcase.include?("SALIHU")
 
-# Bang method is not always availabl
+# .empty? and .nil?
+# .empty? checks if the string is empty
+# .nil? checks if the value is nil
+puts
+p "".empty?
+p " ".empty?
+p "".nil?
+p " ".nil?
+p nil.nil?
+p 5.nil?
+p [1, 2, 3].nil?
