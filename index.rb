@@ -13,3 +13,5 @@
 
 title.upcase!
 p title # "MRS"
+
+# Bang method is not always availabl
