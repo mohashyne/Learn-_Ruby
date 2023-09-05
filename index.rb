@@ -1,14 +1,15 @@
-# parameter
+# parameter : 
+# parameters  can  be more than one
 
-def praise_person(name)
+def praise_person(name) # name is the parameter
     puts "#{name} is amazing"
     puts "#{name} is talented"
     puts "#{name} is brilliant"
 end
 
-praise_person("Muhammad")
-praise_person("Hassan")
-praise_person("Umar")
+praise_person("Muhammad") # "muhammad"  is the argument
+praise_person("Hassan") # "Hassan"  is the argument
+praise_person("Umar")  # "Umar"  is the argument
 
 # output
 # Muhammad is amazing
