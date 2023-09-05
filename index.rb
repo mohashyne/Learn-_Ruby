@@ -1,12 +1,23 @@
-first_name = "Muhammad "
-last_name = "Ali"
+a = "Hello world"
+b  = "Hi, my name is muhammad!"
+c = " "
+d = ''
 
-# puts first_name + " " +last_name
+# length 
+p a.length # 11
+p b.length # 24
+p c.length # 1
+p d.length # 0
 
-p first_name << last_name << " Aminu"
+puts
 
-# puts first_name.concat(last_name)
-p  first_name # Muhammad Ali , overwrites first_name
+# size
+p a.size # 11
+p b.size # 24
+p c.size # 1
+p d.size # 0
 
 
-# puts first_name.prepend(last_name) # Ali Muhammad
+p b.length.class
+p b.length.odd? # true
+p b.length.even? # false
