@@ -1,24 +1,15 @@
-# include
+# methods are designed to be re-used
+# methods is defined with set of ruby statments
+# methods are defined with def keyword
+# def means define
 
-name = "Muhammad Salihu"
+def intro_myself
 
-p name.include?("Salihu")
-p name.include?("Salih")
+    puts "Hello World"
+    puts "My name is Muhammad"
+    puts "I am learning Ruby"
+    puts "I am enjoying it"
 
-# it is case sensitive
-p name.include?("s")
+end
 
-# .upcase or .downcase to have  consistency  when checking
-p name.upcase.include?("SALIHU")
-
-# .empty? and .nil?
-# .empty? checks if the string is empty
-# .nil? checks if the value is nil
-puts
-p "".empty?
-p " ".empty?
-p "".nil?
-p " ".nil?
-p nil.nil?
-p 5.nil?
-p [1, 2, 3].nil?
+3.times {intro_myself()}
