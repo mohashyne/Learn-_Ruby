@@ -1,23 +1,9 @@
-a = "Hello world"
-b  = "Hi, my name is muhammad!"
-c = " "
-d = ''
+story = "Once upon a time in a land, where programmers laugh"
+# story[27..39] = "Ruby programmers "
+# p story
 
-# length 
-p a.length # 11
-p b.length # 24
-p c.length # 1
-p d.length # 0
-
-puts
-
-# size
-p a.size # 11
-p b.size # 24
-p c.size # 1
-p d.size # 0
-
-
-p b.length.class
-p b.length.odd? # true
-p b.length.even? # false
+p story[6] # "p"
+p story[6, 10] # "pon a time"
+p story.slice(8) # "n"
+p story.slice(8, 10) # "n a time i"
+p story.slice(8..10) # "n a"
