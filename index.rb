@@ -8,4 +8,5 @@ p story.slice(17..28)  # "in a land, w"
 p story[17...28] # "in a land, "
 p story.slice(17...28)  # "in a land, "
 p story[17..100] # "in a land, where programmers laugh"
+p story[17..-9]  # "in a land, where programme"
 
