@@ -26,3 +26,11 @@ array.each do |num|
     end
 end
  
+
+def odd_or_even(num)
+    if num.odd?
+        puts "#{num} is odd"
+    else
+        puts "#{num} is even"
+    end
+end
