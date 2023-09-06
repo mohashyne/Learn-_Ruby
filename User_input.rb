@@ -1,9 +1,7 @@
-age = 30
-ticket = nil
-id = true
+budget = 5
+price = 10
+mood = "happy"
 
-if age > 21 && ticket && id
-    puts "Congratulations, welcome to the show!"
-    else
-    puts "Sorry, you can't come in."
+if budget > price || mood == "happy"
+    puts "I'm going to buy the item!"
 end
