@@ -1,28 +1,12 @@
-if 5 < 7
-puts "This stateement is true"
+# Everything in ruby and true returns truthy
+# Except 0 and false return falsy
 
-end      # This stateement is true
-
-if 3 < 1
-    puts "This stateement not true"
-    
-end      # This stateement is true
-
-
-word = "kangaroon"
-
-if word.length == 8
-    puts "That word has 8 letters!"
+if 5 
+    puts "Hello there!"
 end
 
-if word.include?("garoo")
-    puts "Yup, your word has garoo in it!"
-end
+puts
 
-if 5.odd?
-    puts "That number is odd!"
-end
-
-if 6.even?
-    puts "That number is even!"
-end
+if nil
+    puts "Hello there!"
+end   #  nothing will display because its  falsy
