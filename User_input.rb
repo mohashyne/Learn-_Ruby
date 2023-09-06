@@ -7,5 +7,3 @@ if age > 21 && ticket && id
     else
     puts "Sorry, you can't come in."
 end
-
-#
