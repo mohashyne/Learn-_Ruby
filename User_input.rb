@@ -1,12 +1,28 @@
-puts "What is your name?"
-name_input = gets.chomp # gets reads user input, and chomp removes the trailing newline character
+if 5 < 7
+puts "This stateement is true"
+
+end      # This stateement is true
+
+if 3 < 1
+    puts "This stateement not true"
+    
+end      # This stateement is true
 
 
-puts "How old are you: "
-age_input = gets.chomp.to_i
-# gets reads user input, and chomp removes the trailing newline character
+word = "kangaroon"
 
-puts "My  name is #{name_input}! and I am, #{age_input} years old!"
+if word.length == 8
+    puts "That word has 8 letters!"
+end
 
-# this runs  on irb using terrminal
-#  gets  method is automatically giving us back a string
+if word.include?("garoo")
+    puts "Yup, your word has garoo in it!"
+end
+
+if 5.odd?
+    puts "That number is odd!"
+end
+
+if 6.even?
+    puts "That number is even!"
+end
