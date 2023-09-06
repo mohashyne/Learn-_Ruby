@@ -1,12 +1,28 @@
-# Everything in ruby and true returns truthy
-# Except 0 and false return falsy
 
-if 5 
-    puts "Hello there!"
+color = "blue"
+
+# if color.include?("Red")
+#   puts "Red is included in the string"
+# else
+#   puts "Red is not included in the string"
+# end
+
+if color.include?("Red")
+    puts "Red is included in the string"
+elsif
+     color == "Red" 
+     puts "Red is not included in the string"
+else
+    puts "its Neither red nor green"
 end
 
-puts
+array = [2,7,6,4,2,4,9,7]
 
-if nil
-    puts "Hello there!"
-end   #  nothing will display because its  falsy
+array.each do |num| 
+    if num.odd?
+        puts "#{num} is odd"
+    else
+        puts "#{num} is even"
+    end
+end
+ 
