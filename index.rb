@@ -1,17 +1,31 @@
-# Negation
+# unless
 
-# Negation is a unary operator that returns the opposite of its operand.
-# For example, !true returns false, and !false returns true.
-puts !true # => false
-puts !false # => true
 
-# The following expression evaluates to 1 because it's equivalent to (0 + 2) * -3:
-puts -(0 + 2) * -3 # => 6
+# if  else vs  unless
+# password = "topsecret"
 
-user = "free"
-if user != "subscriber"
-    puts "Only subscribers are allowed!"
+# if password != "wiskers"
+#     puts "Not allowed!"
+#     else
+#     puts "That's the right password, welcome!"
+# end   
+# outputs is  "Not allowed!"
+
+
+
+# UNLESS
+password = "topsecret"
+
+unless password == "wiskers"
+    puts "Not allowed!"
+    else
+puts "That's the right password, welcome!"
+end    
+# output is  "Not allowed!"
+
+# unless is the opposite of if
+
+
+unless password.include?("a")
+    puts  "It dose not include the letter"
 end
-
-p !!1
-p !!false # false , because  we used  double  negation
