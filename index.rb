@@ -1,25 +1,18 @@
-def add(a, b)
-    a + b  
-end
+# Case
 
-def subtract(a, b)
-    a - b  
-end
-
-def multiply(a, b)
-    a * b   
-end
-
-def calculator(a, b, operation = "add")
-    if operation == "add"
-        "The result of adding is #{add(a, b)}"
-    elsif operation == "subtract"
-        "The result of subtracting is #{subtract(a, b)}"
-    elsif operation == "multiply"
-        "The result of multiplying is #{multiply(a, b)}"
+def rate_my_food(food)
+    case food
+    when "Steak"
+        "Pass the steak sauce! That's delicious!"
+        
+    when "Sushi"
+        "Great choice! My favorite food" 
+    when "Tacos"
+        "Cheesy and filling! The perfect combination"    
     else
-        "That's not a real math operation, genius!"
-    end 
+        "I don't know about that food!"
+    end
+    
 end
 
-puts calculator(3, 2, "multiply")
+puts rate_my_food("Sushi")
