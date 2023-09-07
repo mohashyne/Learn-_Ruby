@@ -1,30 +1,18 @@
-# ternary operator
 
-# This is a longer code
-puts "Enter a number: "
-num = gets.chomp.to_i
-if num > 0
-    puts "Your number is positive"
-    else
-    puts "Your number is negative"
-    end
-
-# This is a shorter code     # ternary operator (simplified)
-puts "Enter a number: "
-num = gets.chomp.to_i
-num > 0 ? puts("Your number is positive") : puts("Your number is negative")
-
-# convert the code to a method for reuseability
-def check_num(num)
-    num > 0 ? puts("Your number is positive") : puts("Your number is negative")
+# optional
+def phone_call(number, international_code, area_code)
+    puts "Dailing... #{international_code}-#{area_code}-#{number}"
+    
 end
 
-
-puts "Enter a number: "
-num = gets.chomp.to_i
-check_num(num)
+phone_call(1234567, +1, 10) # Calling 234-80-1234567
 
 
 
-
+# default  parameters set on international_code and area_code
+def make_phone_call(number, international_code = +234 , area_code = 80)
+    puts "Calling #{international_code}-#{area_code}-#{number}"
     
+end
+
+make_phone_call(1234567) # Calling 234-80-1234567
