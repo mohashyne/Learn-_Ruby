@@ -1,4 +1,4 @@
-# # while
+# while
 # j = 1
 
 # while j < 50
@@ -45,12 +45,3 @@
 
 # end
 
-
-# WHENEVER  WHILE LOOP RETURNS FALSE , THAT IS THE END
-
-check_even = 2
-
-while check_even.even?
-    puts check_even 
-    check_even += 1 # if you increment by two it going to be infinite
-end    

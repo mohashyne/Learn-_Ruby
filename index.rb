@@ -24,8 +24,3 @@ end
 # output is  "Not allowed!"
 
 # unless is the opposite of if
-
-
-unless password.include?("a")
-    puts  "It dose not include the letter"
-end
