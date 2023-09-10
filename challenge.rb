@@ -19,6 +19,7 @@ fizzbuzz(15)
 # solution using while
 def fizzbuzz_w(number)
     i = 1
+    # while i <= number
     until i > number
         if i % 15 == 0
             puts "FizzBuzz #{i} is divisible 3 and 5"
