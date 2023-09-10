@@ -1,26 +1,18 @@
-# unless
+# if = unsles and while = until
+# until: means continue to execute UNTIL condition is true
 
 
-# if  else vs  unless
-# password = "topsecret"
+# i = 1
 
-# if password != "wiskers"
-#     puts "Not allowed!"
-#     else
-#     puts "That's the right password, welcome!"
-# end   
-# outputs is  "Not allowed!"
+# while i < 10
+#     puts i
+#     i += 1
+# end
 
 
+i = 1
 
-# UNLESS
-password = "topsecret"
-
-unless password == "wiskers"
-    puts "Not allowed!"
-    else
-puts "That's the right password, welcome!"
-end    
-# output is  "Not allowed!"
-
-# unless is the opposite of if
+until i > 9
+    puts i
+    i += 1
+end

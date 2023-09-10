@@ -1,47 +1,80 @@
-# while
-# j = 1
-
-# while j < 50
-#    puts "Iteración #{j}"
-#    # i = i + 1
-#     j += 1
-# end
-# # Iteración 1 ....Iteración 49
-
-# puts j # 50 , this is the result we get outside the loop and when its ends +1
-
-
-
-# i = 1
-
-# while i <= 50
-#     puts "Iteración #{i}"
-#     # i = i + 1
-#     i += 1
-# end
-
-# # Iteración 1 ....Iteración 50
-
-
-# # test a password with while loop
-
-# status = true
-
-# while status
-#     print "Please enter username"
-#     username = gets.chomp.downcase
-#     print "Please enter password"
-#     password = gets.chomp
-
-#     if username == "muhammad" && password == "bestpasswordever"
-#         puts "Entry granted. The nuclear codes are..."
-#         status = false
-#     elsif username == "quit" || password == "quit"
-#         puts "Goodbye! Better luck next time!"
-#         status = false
-#     else
-#         puts "Incorrect combination, try again or enter 'quit'"
-#     end
-
-# end
-
+# if = unsles and while = until
+# 1. if
+# 2. unless
+# 3. while
+# 4. until
+# 5. for
+# 6. case
+# 7. when
+# 8. break
+# 9. next
+# 10. redo
+# 11. retry
+# 12. begin
+# 13. rescue
+# 14. ensure
+# 15. end
+# 16. do
+# 17. yield
+# 18. def
+# 19. class
+# 20. module
+# 21. alias
+# 22. undef
+# 23. super
+# 24. self
+# 25. return
+# 26. true
+# 27. false
+# 28. nil
+# 29. or
+# 30. and
+# 31. not
+# 32. __FILE__
+# 33. __LINE__
+# 34. defined?
+# 35. BEGIN
+# 36. END
+# 37. __ENCODING__
+# 38. __END__
+# 39. __dir__
+# 40. __method__
+# 41. __callee__
+# 42. __send__
+# 43. lambda
+# 44. proc
+# 45. public
+# 46. private
+# 47. protected
+# 48. include
+# 49. extend
+# 50. attr
+# 51. attr_reader
+# 52. attr_writer
+# 53. attr_accessor
+# 54. module_function
+# 55. public_class_method
+# 56. private_class_method
+# 57. public_constant
+# 58. private_constant
+# 59. autoload
+# 60. autoload?
+# 61. raise
+# 62. fail
+# 63. catch
+# 64. throw
+# 65. global_variables
+# 66. loop
+# 67. rand
+# 68. srand
+# 69. Math
+# 70. Integer
+# 71. Float
+# 72. String
+# 73. Array
+# 74. Hash
+# 75. Range
+# 76. Regexp
+# 77. File
+# 78. IO
+# 79. Dir
