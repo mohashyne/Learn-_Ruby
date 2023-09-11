@@ -1,36 +1,30 @@
-# inline modifiers
-
-number = 5000
-
-# if number > 2500
-#     puts "Huge number!"
-# end
-
-puts "Huge number!" if number > 2500
-
-puts "Huge number!" unless number < 2500
-
-# ternary operator
-puts number > 2500 ? "Huge number!" : "Small number!"
+ # conditional assignment is an assignment which allows you 
+ # to assign a brand new value to a variable if and only if
+ # the current value is nil or a nil object
 
 
+ y = nil
+    p y
 
-# case statement
+y ||= 5
+p y
 
-# case number
-# when 2500
-#     puts "it is 2500"
-# when 5000
-#     puts "it is 5000"
-# when 7500
-#     puts "it is 7500"
-# else
-#     puts "it is not 2500, 5000, or 7500"
-# end
+a, b, c = nil, 50, nil
 
-case number
-when 2500 then puts "it is 2500"
-when 5000 then puts "it is 5000"
-when 7500 then puts "it is 7500"
-else puts "it is not 2500, 5000, or 7500"
-end
+a ||= 10
+b ||= 20
+
+p a, b, c
+
+# when  to use it
+# when you want to assign a value to a variable if it is nil
+
+greeting = "Hello"
+
+# extraction = 100  if you input 0  it will return the first index but 100 will return nil
+# and that is not what we want , instead we use the 
+# conditional assignment to output a message if extraction is nil
+extraction = 100
+letter  = greeting[extraction]
+
+p letter ||= "Not found"
