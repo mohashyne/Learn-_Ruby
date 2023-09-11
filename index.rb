@@ -1,5 +1,5 @@
 # size method only works on numbers
-# string  can be converts to numbers to work i.e "5"
+
 
 # numbers = 143...700  # if you use 3 dots ... the last number will be excluded 
 
@@ -9,6 +9,4 @@ p numbers.size # 558
 p numbers.count # 558
 p numbers.first(557)
 p numbers.last(1)  # 700
-
-
 
