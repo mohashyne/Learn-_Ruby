@@ -1,12 +1,16 @@
-# size method only works on numbers
+
+check_alphabet = "a".."m"
+
+p check_alphabet === "k" # true
+
+p check_alphabet.first(5)
 
 
-# numbers = 143...700  # if you use 3 dots ... the last number will be excluded 
+puts "Enter a word: "   
+word = gets.chomp.downcase
 
-numbers = 143..700
-
-p numbers.size # 558
-p numbers.count # 558
-p numbers.first(557)
-p numbers.last(1)  # 700
-
+if check_alphabet.first(5).include?(word[0])
+    puts "The word #{word} starts with a letter between a and m"
+else
+    puts "The word #{word} does not start with a letter between a and m"
+end
