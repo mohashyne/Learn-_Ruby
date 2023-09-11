@@ -1,16 +1,12 @@
+# rand : it dose not needs to be called
+# just think about like  "puts"
 
-check_alphabet = "a".."m"
+puts rand # auto generate ranndom num i.e 0.3342900
 
-p check_alphabet === "k" # true
+puts rand.round(2) # 0.33 , it   will round the total number to two
 
-p check_alphabet.first(5)
+puts rand(100) # will generate between  1-99 but not  100
 
+puts rand * 100 # will generate floating num between  1-99 but not inclluding 100
 
-puts "Enter a word: "   
-word = gets.chomp.downcase
-
-if check_alphabet.first(5).include?(word[0])
-    puts "The word #{word} starts with a letter between a and m"
-else
-    puts "The word #{word} does not start with a letter between a and m"
-end
+puts rand(50..69)
