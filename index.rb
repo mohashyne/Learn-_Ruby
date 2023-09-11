@@ -1,30 +1,26 @@
- # conditional assignment is an assignment which allows you 
- # to assign a brand new value to a variable if and only if
- # the current value is nil or a nil object
+
+#  Range
+# two dots ..  includes the final value  of thee range
+nums = 2..10 
+p nums   #2..10
+p nums.class  # Range
 
 
- y = nil
-    p y
+p nums.first # 2
+p nums.last # 10
+p nums.first(4) # [2, 3, 4, 5]
+p nums.last(3) # [8, 9, 10]
+p nums.first(4).last(1) # [5]
 
-y ||= 5
-p y
 
-a, b, c = nil, 50, nil
 
-a ||= 10
-b ||= 20
+# three (3) dots ...  Excludes the final value  of thee range
+num2 = 2...10
+p num2
 
-p a, b, c
-
-# when  to use it
-# when you want to assign a value to a variable if it is nil
-
-greeting = "Hello"
-
-# extraction = 100  if you input 0  it will return the first index but 100 will return nil
-# and that is not what we want , instead we use the 
-# conditional assignment to output a message if extraction is nil
-extraction = 100
-letter  = greeting[extraction]
-
-p letter ||= "Not found"
+p num2.last # 10, but  with  this you will see the last number
+# with that , its  better to use the methods below
+p num2.last(1) # 9
+p num2.first(4) # [2, 3, 4, 5]
+p num2.last(3) # [7, 8, 9] last nnumber (10) has been excluded
+p num2.first(4).last(1) # [5]
