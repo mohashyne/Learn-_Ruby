@@ -1,12 +1,37 @@
-# rand : it dose not needs to be called
-# just think about like  "puts"
+p []
 
-puts rand # auto generate ranndom num i.e 0.3342900
+numbers = [4, 8, 15, 16, 23, 42]
 
-puts rand.round(2) # 0.33 , it   will round the total number to two
+puts numbers
+# 4
+# 8
+# 15
+# 16
+# 23
+# 42
 
-puts rand(100) # will generate between  1-99 but not  100
+p numbers
+# [4, 8, 15, 16, 23, 42]
 
-puts rand * 100 # will generate floating num between  1-99 but not inclluding 100
+toys = ["Teddy bear", "Super Soaker", "board game"]
 
-puts rand(50..69)
+puts toys 
+# Teddy bear
+# Super Soaker
+# board game
+
+p toys # ["Teddy bear", "Super Soaker", "board game"]
+
+
+things = [4, true, "Hello", 10.99]
+
+registrations = [true, true, false, true, false]
+
+p registrations # [true, true, false, true, false]
+
+students = [["Boris", 25, true],
+            ["Sally", 23, true],
+            ["Ingrid", 31, false]]
+
+        
+p students   # [["Boris", 25, true], ["Sally", 23, true], ["Ingrid", 31, false]]
