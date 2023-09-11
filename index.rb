@@ -1,26 +1,32 @@
+#  Alphabetical range
+alphabet = "a".."z"
+p alphabet
 
-#  Range
-# two dots ..  includes the final value  of thee range
-nums = 2..10 
-p nums   #2..10
-p nums.class  # Range
-
-
-p nums.first # 2
-p nums.last # 10
-p nums.first(4) # [2, 3, 4, 5]
-p nums.last(3) # [8, 9, 10]
-p nums.first(4).last(1) # [5]
+puts alphabet.first(5)
+puts alphabet.last(3)
 
 
+# mixing Capital letters and small letters, Caps comes first
+# remembeer if you do  something like this below
+# it  will give you  extra strings befor the small letters starts
 
-# three (3) dots ...  Excludes the final value  of thee range
-num2 = 2...10
-p num2
+alphabetCaps_small = "A".."z"
+p alphabetCaps_small.first(40)
 
-p num2.last # 10, but  with  this you will see the last number
-# with that , its  better to use the methods below
-p num2.last(1) # 9
-p num2.first(4) # [2, 3, 4, 5]
-p num2.last(3) # [7, 8, 9] last nnumber (10) has been excluded
-p num2.first(4).last(1) # [5]
+#["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
+# "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X",
+# "Y", "Z",
+# "[", "\\", "]", "^", "_", "`", 
+# "a", "b", "c", "d", "e", "f", "g", "h"]
+
+# CAPS ONLY
+alphabetCaps = "A".."Z"
+p alphabetCaps.first(40)
+
+#["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
+
+
+
+
+# 1. Create a method that takes a range of letters and returns each letter in the range except for the last letter
