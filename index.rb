@@ -1,37 +1,26 @@
-p []
-
-numbers = [4, 8, 15, 16, 23, 42]
-
-puts numbers
-# 4
-# 8
-# 15
-# 16
-# 23
-# 42
-
-p numbers
-# [4, 8, 15, 16, 23, 42]
-
-toys = ["Teddy bear", "Super Soaker", "board game"]
-
-puts toys 
-# Teddy bear
-# Super Soaker
-# board game
-
-p toys # ["Teddy bear", "Super Soaker", "board game"]
+# w syntax: no  need to use qoutes or comma to add names , just space
+# the only issue is when you have two names for one person
+# each name is been treated  as  one
+# so if you want to separate them, you can do it by using a back slash
+   
 
 
-things = [4, true, "Hello", 10.99]
+names = %w[muhammad hauwa hassan ummi afra hauwa]
+p names
+# ["muhammad", "hauwa", "hassan", "ummi", "afra", "hauwa"]
 
-registrations = [true, true, false, true, false]
+names.each do |name|
+    puts name
+end  
+# muhammad
+# hauwa
+# hassan
+# ummi
+# afra
+# hauwa
 
-p registrations # [true, true, false, true, false]
 
-students = [["Boris", 25, true],
-            ["Sally", 23, true],
-            ["Ingrid", 31, false]]
+  new_names = %w[Amins\ Musa Aliyu\ Muhammad Ibrahim hauwa]
+    p new_names
 
-        
-p students   # [["Boris", 25, true], ["Sally", 23, true], ["Ingrid", 31, false]]
+    # ["Amins Musa", "Aliyu Muhammad", "Ibrahim", "hauwa"]

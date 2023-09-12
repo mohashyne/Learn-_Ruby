@@ -1,1 +1,1 @@
-puts check_alphabet.include?("b")
+names = %w[muhammad hauwa hassan ummi afra hauwa]
