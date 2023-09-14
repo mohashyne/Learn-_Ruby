@@ -1,9 +1,13 @@
-channels = ["CBS", "FOX", "NBC", "ESPN", "UPN"]
+nummbers = [0, 2, 4, 8, 10, 12, 14]
 
-p channels.values_at(4)  #  ["UPN"]
-p channels.values_at(0, 2, 4)  #  ["CBS", "NBC", "UPN"]
-p channels.values_at(1, -1)  #  ["FOX", "UPN"]
-p channels.values_at(3, 3, 4, 2)  #  ["ESPN", "ESPN", "UPN", "NBC"]
-p channels.values_at(3, 3, 4, 2, 100)  #  ["ESPN", "ESPN", "UPN", "NBC", nil]
-p channels.values_at(3, 3, 4, 2, -100)  #  ["ESPN", "ESPN", "UPN", "NBC", nil]
-p channels.values_at(3, 3, 4, 2, 2.4)  #  ["ESPN", "ESPN", "UPN", "NBC", nil]
+p nummbers.slice(3) # 8
+p nummbers.slice(2, 3) # [4, 8, 10]
+p nummbers.slice(4..6) # [10, 12, 14]
+p nummbers.slice(4...6) # [10, 12]
+p nummbers.slice(-1) # 14
+p nummbers.slice(100) # nil
+p nummbers.slice(2, 100) # [4, 8, 10, 12, 14]
+p nummbers.slice(100, 2) # nil
+p nummbers.slice(2..100) # [4, 8, 10, 12, 14]
+p nummbers.slice(100..200) # nil
+p nummbers.slice(2...100) # [4, 8, 10, 12, 14]
