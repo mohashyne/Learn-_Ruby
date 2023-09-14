@@ -10,3 +10,5 @@ p fruits[100] # nil
 # USING FETCH
 p fruits.fetch(2)  #"Grape"
 p fruits.fetch(100, "Unknow") #"Unknow"
+
+
