@@ -1,7 +1,9 @@
-numbers = %w[1 2 3 4 6 8 9 10 4]
+channels = ["CBS", "FOX", "NBC", "ESPN", "UPN"]
 
-p numbers[1..4] # ["2", "3", "4", "6"]
-p numbers[1...4] # ["2", "3", "4"]
-
-# this will get everything if the array dosn't reach 100
-p numbers[1..100] #["2", "3", "4", "6", "8", "9", "10", "4"]
+p channels.values_at(4)  #  ["UPN"]
+p channels.values_at(0, 2, 4)  #  ["CBS", "NBC", "UPN"]
+p channels.values_at(1, -1)  #  ["FOX", "UPN"]
+p channels.values_at(3, 3, 4, 2)  #  ["ESPN", "ESPN", "UPN", "NBC"]
+p channels.values_at(3, 3, 4, 2, 100)  #  ["ESPN", "ESPN", "UPN", "NBC", nil]
+p channels.values_at(3, 3, 4, 2, -100)  #  ["ESPN", "ESPN", "UPN", "NBC", nil]
+p channels.values_at(3, 3, 4, 2, 2.4)  #  ["ESPN", "ESPN", "UPN", "NBC", nil]
