@@ -32,8 +32,8 @@ p fruits2
 fruits2[4] ||= "Watermelon" 
 p fruits2   
 
-fruits2[0..2] = ["blackberry", "kiwi"]
-p fruits2 # ["blackberry", "kiwi", "Banana", "Watermelon"]
+fruits2[0..1] = ["blackberry", "kiwi"]
+p fruits2 # ["blackberry", "kiwi", "Grape", "Banana", "Watermelon"]
 
 fruits2[0..2] = ["blackberry", "kiwi", "orange", "banana", "grape"]
 p fruits2  # ["blackberry", "kiwi", "orange", "banana", "grape", "Watermelon"]
