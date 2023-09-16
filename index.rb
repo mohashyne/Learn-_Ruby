@@ -1,40 +1,16 @@
-fruits = ["Apple", "Orange", "Grape", "Banana"]
+# length
+p [1, 2, 3, 4, nil, "hello"].length #  6
+p [].length  # 0
 
-fruits[3] = "Yoghurt"
-
-p fruits   # ["Apple", "Orange", "Grape", "Yoghurt"]
-
-# ADD
-fruits[4] = "juice"
-
-p fruits   # ["Apple", "Orange", "Grape", "Yoghurt", "juice"]
-
-fruits[10] = "Kiwi"
-p fruits  #  ["Apple", "Orange", "Grape", "Yoghurt", "juice", nil, nil, nil, nil, nil, "Kiwi"]
-
-# ADDING MULTIPLE ELEMENTS
-fruits[5, 3] = ["Canteloupe", "Dragonfruit", "Starfruit"]
-p fruits  # ["Apple", "Orange", "Grape", "Yoghurt", "juice", "Canteloupe", "Dragonfruit", "Starfruit", nil, "Kiwi"]
-
-# REMOVE
-fruits[9] = []
-p fruits
+# size
+p [1, 2, 3, 4, nil, "hello"].size # 6
+p [].size  # 0
 
 
-# REPLACE USING CONDITIONAL ASSIGNMENT
-fruits2 = ["Apple", "Orange", "Grape", "Banana"]
-p fruits2
+#  count
+p [1, 2, 3, 4, nil, "hello", 2, 6, 2, 4, 1, nil, nil, nil].count(nil) #  4
+p [1, 2, 3, 4, nil, "hello", 2, 6, 2, 4, 1, nil, nil, nil].count # 14
 
-# fruits[5] = "Watermelon" if fruits[5] == nil
-      
-     # OR
+#  count is a little bit more flexible
 
-fruits2[4] ||= "Watermelon" 
-p fruits2   
-
-fruits2[0..1] = ["blackberry", "kiwi"]
-p fruits2 # ["blackberry", "kiwi", "Grape", "Banana", "Watermelon"]
-
-fruits2[0..2] = ["blackberry", "kiwi", "orange", "banana", "grape"]
-p fruits2  # ["blackberry", "kiwi", "orange", "banana", "grape", "Watermelon"]
 
