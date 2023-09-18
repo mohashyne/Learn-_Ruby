@@ -58,6 +58,3 @@ p letters[50].nil? # true
      # puts x == 0.0 / 0.0 # false
      # puts x == 0.0 / 0.0 # false
      # puts x == 0.0 / 0.0 # false
-     
-     # puts x == 0.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
