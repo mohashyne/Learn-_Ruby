@@ -1,60 +1,30 @@
-puts [1, 2, 3].empty? # false
+arr = [1, 3, 5, 7,9, 15, 21, 18, 6]
 
-puts [].empty?  # true
+p arr.first # 1
+p arr.last # 6
 
-puts [].empty? == 0 #  true
+p arr.first(3) # [1, 3, 5]
 
+p arr.first(1) # 1
+p arr.last(1) # 6
 
-fullNum = [1, 2, 3, 4, 5, 6, 7, 2, 8, 9,  2, 0]
-if !fullNum.empty? 
-     puts fullNum.count(2)
+p arr.first(4)[2] # 5
+p arr.last(4)[0] # 15
+
+def first(arr, num = 0)
+return arr[0] if num == 0
+arr[0, num]
 end
 
-letters  = ("a".."j").to_a
-p letters  # ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-p letters[50].nil? # true
+p first(arr) # 1
+p first(arr, 5) # [1, 3, 5, 7, 9]
+p first(arr, 2) # [1, 3]
 
 
-# nil
-# nil is a special value that means "nothing". It is not the same as false, and it is not 0. For example, if you have a variable that has not been assigned a value yet, it will be nil:
- puts [].nil? # false
- num = [7, 8, 0, 9]
-     puts num.nil? # false
-     puts num[100].nil? # true
+def custom_last(arr, num = 0)
+  return arr[-1] if num == 0
+     arr[-num..-1]
+end
 
-     # x = nil
-     # puts x.nil? # true
-     # puts x == nil # true
-     # puts x == false # false
-     # puts x == 0 # false
-     # puts x == "" # false
-     # puts x == [] # false
-     # puts x == {} # false
-     # puts x == () # false
-     # puts x == 1 # false
-     # puts x == "Hello" # false
-     # puts x == [1, 2, 3] # false
-     # puts x == {a: 1, b: 2, c: 3} # false
-     # puts x == Object # false
-     # puts x == Class # false
-     # puts x == Module # false
-     # puts x == BasicObject # false
-     # puts x == true # false
-     # puts x == false # false
-     # puts x == 0.0 # false
-     # puts x == 0.1 # false
-     # puts x == 1.0 # false
-     # puts x == 1.1 # false
-     # puts x == -1.0 # false
-     # puts x == -1.1 # false
-     # puts x == 1.0 / 0.0 # false
-     # puts x == -1.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
-     # puts x == 0.0 / 0.0 # false
+p custom_last(arr) # 6
+p custom_last(arr, 5) # [21, 18, 6]
