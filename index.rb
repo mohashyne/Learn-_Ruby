@@ -1,17 +1,21 @@
-arr = [1, 4, 6, 3, 5, 8, 0, 7, 11, 15]
+a = [1, 2, 3]
+b = [1, 2, 3, 4]
+c = [3, 2, 1]
+d = [1, 2, 3]
 
-# the shift and unshift is use add and remove
-# the first element of the array
-arr.shift()
-p arr #[4, 6, 3, 5, 8, 0, 7, 11, 15]
+# equality
+p a == b   # false
+p a == c   # false
+p a == d   # true
 
-extracted_num = "#{arr.shift(2)} were extracted  "
-p arr # [3, 5, 8, 0, 7, 11, 15]
-p extracted_num
+# inequality
+p a != b   # true
+p a != c   # true
+p a != d   # false
 
-# unshift will add the elements or elements you  list in the bracket
-arr.unshift(2)
-p arr
 
-arr.unshift(2, 3, 4)
-p arr
+e = ["Skittles", "Starbursts", "Snickers"]
+f = ["Skittles", "Starbursts", "snickers"]
+
+p e == f   # false
+p e != f   # true
