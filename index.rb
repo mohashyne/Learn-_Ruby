@@ -1,19 +1,17 @@
-location = ["House", "Airpot", "Market"]
-p location # ["House", "Airpot", "Market"]
+arr = [1, 4, 6, 3, 5, 8, 0, 7, 11, 15]
 
-# print this will enable us see the  item that was removed
-last_item_as_string = location.pop()
-p location   # ["House", "Airpot"] # ["House", "Airpot"]
-p last_item_as_string #  ["House"]
+# the shift and unshift is use add and remove
+# the first element of the array
+arr.shift()
+p arr #[4, 6, 3, 5, 8, 0, 7, 11, 15]
 
-last_item_as_array = location.pop(1)
-p last_item_as_array  # item removed "Market"
+extracted_num = "#{arr.shift(2)} were extracted  "
+p arr # [3, 5, 8, 0, 7, 11, 15]
+p extracted_num
 
+# unshift will add the elements or elements you  list in the bracket
+arr.unshift(2)
+p arr
 
-# location.push("School")
-# p location  # ["House", "Airpot", "School"]
-
-# two_items = location.pop(2)
-# p location  #  ["House"]
-# p two_items  # ["Airpot", "School"]
-
+arr.unshift(2, 3, 4)
+p arr
