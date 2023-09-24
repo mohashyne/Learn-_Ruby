@@ -26,3 +26,7 @@ end
 
 puts even_2
 puts odd_2
+
+# shortest code
+# twos.each {|num| num.even? ? even_2 << num : odd_2 << num }
+
