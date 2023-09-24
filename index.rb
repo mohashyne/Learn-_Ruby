@@ -1,23 +1,27 @@
-shirts = ["striped", "plain white", "plaid", "band"]
-ties = ["polka dot", "solid color", "boring"]
+# for loop
+# for loop is not that popular in ruby as in other languages
+#  each is prefered in ruby and more secured
 
 
-shirts.each do |shirt|
- ties.each do |tie|
-    puts "OPTIONS: A #{shirt} shirt and a #{tie} tie."
- end
 
+for i in 0..5
+     puts "Value of local variable is #{i}"
+     
+end  
+
+puts
+puts "Vaule of local Variable #{i} can also be accessed outside unlike the each method"
+
+# so we can manipulate i and overwritten
+puts
+puts
+
+
+# for loop with next statement
+numbers = [3, 5, 7]
+
+for num in numbers
+     puts "#{num}"
 end
 
-# OPTIONS: A striped shirt and a polka dot tie
-# OPTIONS: A striped shirt and a solid color tie
-# OPTIONS: A striped shirt and a boring tie
-# OPTIONS: A plain white shirt and a polka dot tie
-# OPTIONS: A plain white shirt and a solid color tie
-# OPTIONS: A plain white shirt and a boring tie
-# OPTIONS: A plaid shirt and a polka dot tie
-# OPTIONS: A plaid shirt and a solid color tie
-# OPTIONS: A plaid shirt and a boring tie
-# OPTIONS: A band shirt and a polka dot tie
-# OPTIONS: A band shirt and a solid color tie
-# OPTIONS: A band shirt and a boring tie
+p "#{num} accessed  outside again"
