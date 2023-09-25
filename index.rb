@@ -1,19 +1,41 @@
-animals = ["Lion", "Zebra", "Baboon", "Cheetah"]
+# break
 
-i = 0 # loop will be 0, 1, 2, 3
-while i < animals.length  # length 4
-     puts i
-     puts animals[i] 
-     i += 1    
+prizes = ["Pyrite", "Pyrite", "Pyrite", "Pyrite", "Gold", "Pyrite", "Pyrite"]
+
+i = 0
+
+while i < prizes.length
+     current = prizes[i]
+     if current == "Gold"
+          puts "Yay! Found Gold!"
+          break
+     else
+          puts "#{current} is not gold!"
+     end
+     i += 1
 end
 
-puts "...................."
+# Pyrite is not gold!
+# Pyrite is not gold!
+# Pyrite is not gold!
+# Pyrite is not gold!
+# Yay! Found Gold!
 
-home_animals = ["Cow", "Rabbit", "Sheep", "Lamp"]
-u = 0 # loop will be 0, 1, 2, 3
-# until u >= home_animals.length  # length 4
-until u == home_animals.length  # length 4
-     puts u
-     puts home_animals[u] 
-     u += 1    
+
+puts "-----------------"
+
+numbers = [1, 2, 3, "Hello", 5, 6, 7, 8]
+
+numbers.each do |num|
+     if num.is_a?(Integer)
+          puts "The square of #{num} is #{num ** 2}"
+     else
+          puts "That's not a valid number, I'm done with this nonsense!"
+          break
+     end
 end
+
+# The square of 1 is 1
+# The square of 2 is 4
+# The square of 3 is 9
+# That's not a valid number, I'm done with this nonsense!
