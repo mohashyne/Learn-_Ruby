@@ -1,41 +1,43 @@
 
-# [1, 2, 3, 4, 5]
+# map
+# map can be used to get  a brand new array
+#  without creating a new  array to push tthem in
+#  unlike the each method, you need to create a new array
 
-# Write a loop that gives me sum of
-# the products of each index and its value
-
-# solution
 numbers = [1, 2, 3, 4, 5]
 
-sum = 0
+results = numbers.map {|number| number * 2}
+p results  # [2, 4, 6, 8, 10]
 
-numbers.each_with_index do |number, index|
-    puts "The next product is #{number} with index #{index}"
-    product = number * index
-    puts product
-    sum += product
+
+# each method review
+each_numbers = [2, 4, 6, 8]
+squares = []
+
+each_numbers.each {|each_num| squares << each_num *  2}
+p squares # [4, 8, 12, 16]
+
+
+# collect
+collect_numbers = [15, 20, 30, 40, 50]
+
+collected = collect_numbers.map {|col| col * 2}
+p collected # [30, 40, 60, 80, 100]
+
+# example using map
+fahr_temperature = [105, 73,  40, 18, -2]
+
+celsius_temperature = fahr_temperature.map do |temp|
+     minus32 = temp - 32
+     minus32 * (5.0/9.0).round(3)
 end
-
-puts "The sum of the products is #{sum}"
-
+puts celsius_temperature
 
 
-# challenge 2
-# [-1, 2, 1, 2, 5, 7]
-# Print  the product of the elements and its index position
-# print if the index position is greater than the element
-# create this within a method
-arr = [-1, 2, 1, 2, 5, 7]
+#  AVOID USING PUTS AS THE VERY LAST THING IN A BLOCK
+# AS IT WILL RETURN NIL, AND YOU WILL GET BACK elements of nil
+# instead of the originnal value
 
-def print_if(array)
-
-    array.each_with_index do |number, idx|
-        product = number * idx
-        if idx > number
-            puts "The product of #{number} and #{idx} is #{product}"
-            puts "The index is greater than the number"
-        end
-    end
-end
-
-print_if(arr)
+my_results = [10, 20, 25].map { |rlts| puts rlts ** 2}
+p my_results # [nil, nil, nil]
+# instead of [100, 400, 625]
