@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Course Handout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav ul {
+      background: #444;
+      color: #fff;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .container {
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 0 1rem;
+    }
+    h2 {
+      color: #333;
+      margin-top: 1rem;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+    code {
+      color: #c7254e;
+      background: #f9f2f4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Development Course Handout for Students of M & S Advance Academy in Collaboration with Crystal Blue Tech</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#section1">Introduction</a></li>
+      <li><a href="#section2">HTML Basics</a></li>
+      <li><a href="#section3">CSS Basics</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <section id="section1">
+      <h2>Section 1: Introduction to Web Development</h2>
+
+      <h3>1.1 Introduction</h3>
+      <p>Overview of Web Development</p>
+      <p>Web development involves creating websites and web applications. This can range from simple static websites to complex web applications.</p>
+
+      <p>Importance and Applications</p>
+      <ul>
+        <li>Businesses use websites for marketing.</li>
+        <li>Web apps like social media platforms are integral to daily life.</li>
+      </ul>
+
+      <p>Course Structure</p>
+      <ul>
+        <li>Basics of HTML and CSS.</li>
+        <li>Introduction to JavaScript.</li>
+        <li>Building simple web pages and applications.</li>
+      </ul>
+
+      <h3>1.2 Languages and Tools of Web Development</h3>
+      <p>HTML, CSS, and JavaScript</p>
+      <ul>
+        <li>HTML: Structures content.</li>
+        <li>CSS: Styles content.</li>
+        <li>JavaScript: Adds interactivity.</li>
+      </ul>
+
+      <p>Web Development Tools and Editors</p>
+      <ul>
+        <li>VS Code: A powerful code editor.</li>
+        <li>Chrome DevTools: Inspect and debug web pages.</li>
+      </ul>
+
+      <p>Setting Up Your Environment</p>
+      <ul>
+        <li>Download and install VS Code.</li>
+        <li>Install Chrome for testing your web pages.</li>
+      </ul>
+
+      <h3>1.3 How the Web Works</h3>
+      <p>The Internet and Web Servers</p>
+      <ul>
+        <li>Web servers store and serve web pages.</li>
+        <li>Browsers request and display web pages.</li>
+      </ul>
+
+      <p>Client-Server Architecture</p>
+      <ul>
+        <li>Client (browser) sends a request to the server.</li>
+        <li>Server processes the request and sends back a response.</li>
+      </ul>
+
+      <p>Example: Basic HTTP Request and Response</p>
+      <pre>
+        <code>
+GET /index.html HTTP/1.1
+Host: www.example.com
+
+HTTP/1.1 200 OK
+Content-Type: text/html
+
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+        </code>
+      </pre>
+
+      <h3>1.4 Inspecting HTTP Requests and Responses</h3>
+      <p>Using Browser DevTools</p>
+      <ul>
+        <li>Open Chrome DevTools (F12 or right-click -> Inspect).</li>
+        <li>Navigate to the Network tab to see HTTP requests and responses.</li>
+      </ul>
+
+      <p>Example: Inspecting a Request</p>
+      <ul>
+        <li>Visit a website and inspect the requests.</li>
+        <li>Look at headers, status codes, and response data.</li>
+      </ul>
+    </section>
+
+    <section id="section2">
+      <h2>Section 2: HTML Basics</h2>
+
+      <h3>2.1 Introduction</h3>
+      <p>What is HTML?</p>
+      <ul>
+        <li>HTML (HyperText Markup Language) structures content on the web.</li>
+      </ul>
+
+      <p>Basic Structure of an HTML Document</p>
+      <pre>
+        <code>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Web Page</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+        </code>
+      </pre>
+
+      <h3>2.2 The Head Section</h3>
+      <p>Elements in the Head Section</p>
+      <ul>
+        <li><code>&lt;title&gt;</code>: Specifies the title of the web page.</li>
+        <li><code>&lt;meta&gt;</code>: Provides metadata about the HTML document.</li>
+      </ul>
+
+      <p>Example: Using the Head Section</p>
+      <pre>
+        <code>
+<head>
+  <title>My Web Page</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="A sample web page">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+</head>
+        </code>
+      </pre>
+
+      <h3>2.3 Text</h3>
+      <p>HTML Tags for Text Formatting</p>
+      <ul>
+        <li><code>&lt;p&gt;</code>: Paragraph</li>
+        <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings</li>
+        <li><code>&lt;strong&gt;</code>: Bold text</li>
+        <li><code>&lt;em&gt;</code>: Italicized text</li>
+      </ul>
+
+      <p>Example: Formatting Text</p>
+      <pre>
+        <code>
+<body>
+  <h1>Main Heading</h1>
+  <h2>Subheading</h2>
+  <p>This is a paragraph with <strong>bold</strong> and <em>italic</em> text.</p>
+</body>
+        </code>
+      </pre>
+
+      <h3>2.4 Entities</h3>
+      <p>Special Characters and Symbols</p>
+      <ul>
+        <li><code>&amp;lt;</code>: Less than (&lt;)</li>
+        <li><code>&amp;gt;</code>: Greater than (&gt;)</li>
+        <li><code>&amp;amp;</code>: Ampersand (&amp;)</li>
+      </ul>
+
+      <p>Example: Using Entities</p>
+      <pre>
+        <code>
+<p>5 &lt; 10 &amp; 10 &gt; 5</p>
+        </code>
+      </pre>
+
+      <h3>2.5 Hyperlinks</h3>
+      <p>Creating Links</p>
+      <ul>
+        <li><code>&lt;a href="URL"&gt;Link text&lt;/a&gt;</code></li>
+      </ul>
+
+      <p>Example: Hyperlinks</p>
+      <pre>
+        <code>
+<a href="https://www.example.com">Visit Example</a>
+<a href="page2.html">Go to Page 2</a>
+        </code>
+      </pre>
+
+      <h3>2.6 Images</h3>
+      <p>Embedding Images</p>
+      <ul>
+        <li><code>&lt;img src="URL" alt="Description"&gt;</code></li>
+      </ul>
+
+      <p>Example: Adding an Image</p>
+      <pre>
+        <code>
+<img src="https://www.example.com/image.jpg" alt="Example Image">
+        </code>
+      </pre>
+
+      <h3>2.7 Video and Audio</h3>
+      <p>Adding Multimedia</p>
+      <ul>
+        <li><code>&lt;video src="URL" controls&gt;&lt;/video&gt;</code></li>
+        <li><code>&lt;audio src="URL" controls&gt;&lt;/audio&gt;</code></li>
+      </ul>
+
+      <p>Example: Embedding Video and Audio</p>
+      <pre>
+        <code>
+<video src="video.mp4" controls></video>
+<audio src="audio.mp3" controls></audio>
+        </code>
+      </pre>
+
+      <h3>2.8 Lists</h3>
+      <p>Ordered and Unordered Lists</p>
+      <ul>
+        <li><code>&lt;ul&gt;</code>: Unordered list</li>
+        <li><code>&lt;ol&gt;</code>: Ordered list</li>
+        <li><code>&lt;li&gt;</code>: List item</li>
+      </ul>
+
+      <p>Example: Creating Lists</p>
+      <pre>
+        <code>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+</ol>
+        </code>
+      </pre>
+
+      <h3>2.9 Tables</h3>
+      <p>Structuring Data with Tables</p>
+      <ul>
+        <li><code>&lt;table&gt;</code>: Defines a table</li>
+        <li><code>&lt;tr&gt;</code>: Table row</li>
+        <li><code>&lt;td&gt;</code>: Table cell</li>
+        <li><code>&lt;th&gt;</code>: Table header</li>
+      </ul>
+
+      <p>Example: Creating a Table</p>
+      <pre>
+        <code>
+<table>
+  <tr>
+    <th>Heading 1</th>
+    <th>Heading 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Cell 1</td>
+    <td>Row 1, Cell 2</td>
+  </tr>
+</table>
+        </code>
+      </pre>
+    </section>
+
+    <section id="section3">
+      <h2>Section 3: CSS Basics</h2>
+
+      <h3>3.1 Introduction</h3>
+      <p>What is CSS?</p>
+      <ul>
+        <li>CSS (Cascading Style Sheets) styles HTML content.</li>
+      </ul>
+
+      <p>How CSS Works with HTML</p>
+      <ul>
+        <li>CSS rules are applied to HTML elements to change their appearance.</li>
+      </ul>
+
+      <p>Example: Applying CSS</p>
+      <pre>
+        <code>
+<style>
+  body {
+    background-color: lightblue;
+  }
+  h1 {
+    color: navy;
+    text-align: center;
+  }
+</style>
+        </code>
+      </pre>
+
+      <h3>3.2 Formatting Code</h3>
+      <p>Best Practices</p>
+      <ul>
+        <li>Use consistent indentation.</li>
+        <li>Separate CSS into external stylesheets for larger projects.</li>
+      </ul>
+
+      <p>Example: External Stylesheet</p>
+      <pre>
+        <code>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+        </code>
+      </pre>
+
+      <p><code>styles.css</code></p>
+      <pre>
+        <code>
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: navy;
+  text-align: center;
+}
+        </code>
+      </pre>
+
+      <h3>3.3 Inspecting Pages Using DevTools</h3>
+      <p>Using Browser DevTools</p>
+      <ul>
+        <li>Inspect elements, view CSS, and make changes in real-time.</li>
+      </ul>
+
+      <p>Example: Inspecting Elements</p>
+      <ul>
+        <li>Open Chrome DevTools, go to the Elements tab, and hover over elements to see their styles.</li>
+      </ul>
+
+      <h3>3.4 Validating Web Pages</h3>
+      <p>Importance of Validation</p>
+      <ul>
+        <li>Ensure your HTML and CSS follow web standards.</li>
+        <li>Improve compatibility and accessibility.</li>
+      </ul>
+
+      <p>Tools for Validation</p>
+      <ul>
+        <li><a href="https://validator.w3.org/" target="_blank">W3C Markup Validation Service</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+      </ul>
+
+      <p>Example: Validating HTML</p>
+      <ul>
+        <li>Copy and paste your HTML into the W3C Markup Validation Service and check for errors.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
