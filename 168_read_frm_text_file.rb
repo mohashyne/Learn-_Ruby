@@ -1,6 +1,6 @@
 
-File.open("storage_files/tech_data.txt").each do |line|
-    puts line
+File.open("./storage_files/tech_data.txt").each do |line|
+    puts line.split(".")
 end
 
 # result:

@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Object - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/navigation.js" defer></script>
+<script src="./js/search.js" defer></script>
+<script src="./js/search_index.js" defer></script>
+<script src="./js/searcher.js" defer></script>
+<script src="./js/darkfish.js" defer></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search (/) for a class, method, ..." spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    
+<div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  <p class="link">BasicObject
+</div>
+
+    
+    
+    
+<!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    <li ><a href="#method-c-new">::new</a>
+    <li ><a href="#method-i-a">#a</a>
+    <li ><a href="#method-i-add_space_before_capitals">#add_space_before_capitals</a>
+    <li ><a href="#method-i-adv_custom_min">#adv_custom_min</a>
+    <li ><a href="#method-i-bake_cookies">#bake_cookies</a>
+    <li ><a href="#method-i-bake_cookies_again">#bake_cookies_again</a>
+    <li ><a href="#method-i-calculate">#calculate</a>
+    <li ><a href="#method-i-calculate_total_2">#calculate_total_2</a>
+    <li ><a href="#method-i-categorize_person">#categorize_person</a>
+    <li ><a href="#method-i-check_method">#check_method</a>
+    <li ><a href="#method-i-check_weekend">#check_weekend</a>
+    <li ><a href="#method-i-convert">#convert</a>
+    <li ><a href="#method-i-count_and_remove_duplicates">#count_and_remove_duplicates</a>
+    <li ><a href="#method-i-cubes">#cubes</a>
+    <li ><a href="#method-i-custom_compact">#custom_compact</a>
+    <li ><a href="#method-i-custom_concat">#custom_concat</a>
+    <li ><a href="#method-i-custom_each">#custom_each</a>
+    <li ><a href="#method-i-custom_end_with">#custom_end_with</a>
+    <li ><a href="#method-i-custom_first">#custom_first</a>
+    <li ><a href="#method-i-custom_include">#custom_include</a>
+    <li ><a href="#method-i-custom_index">#custom_index</a>
+    <li ><a href="#method-i-custom_intersection">#custom_intersection</a>
+    <li ><a href="#method-i-custom_join">#custom_join</a>
+    <li ><a href="#method-i-custom_last">#custom_last</a>
+    <li ><a href="#method-i-custom_max">#custom_max</a>
+    <li ><a href="#method-i-custom_max_num">#custom_max_num</a>
+    <li ><a href="#method-i-custom_merge">#custom_merge</a>
+    <li ><a href="#method-i-custom_min_num">#custom_min_num</a>
+    <li ><a href="#method-i-custom_multiply">#custom_multiply</a>
+    <li ><a href="#method-i-custom_squeeze">#custom_squeeze</a>
+    <li ><a href="#method-i-custom_subtraction">#custom_subtraction</a>
+    <li ><a href="#method-i-custom_union">#custom_union</a>
+    <li ><a href="#method-i-custom_union2">#custom_union2</a>
+    <li ><a href="#method-i-custom_uniq">#custom_uniq</a>
+    <li ><a href="#method-i-custom_uniq_refactor">#custom_uniq_refactor</a>
+    <li ><a href="#method-i-custom_zip">#custom_zip</a>
+    <li ><a href="#method-i-del_str_letter">#del_str_letter</a>
+    <li ><a href="#method-i-diet">#diet</a>
+    <li ><a href="#method-i-diet_proc">#diet_proc</a>
+    <li ><a href="#method-i-each">#each</a>
+    <li ><a href="#method-i-even_and_odds">#even_and_odds</a>
+    <li ><a href="#method-i-even_or_odd">#even_or_odd</a>
+    <li ><a href="#method-i-find_day_of_year_by_number">#find_day_of_year_by_number</a>
+    <li ><a href="#method-i-fizz_buzz">#fizz_buzz</a>
+    <li ><a href="#method-i-generate_random_num">#generate_random_num</a>
+    <li ><a href="#method-i-get_keys_from_hash">#get_keys_from_hash</a>
+    <li ><a href="#method-i-get_values_from_hash">#get_values_from_hash</a>
+    <li ><a href="#method-i-greeter">#greeter</a>
+    <li ><a href="#method-i-introduce_myself">#introduce_myself</a>
+    <li ><a href="#method-i-list_names">#list_names</a>
+    <li ><a href="#method-i-membership_status">#membership_status</a>
+    <li ><a href="#method-i-multiple_pass">#multiple_pass</a>
+    <li ><a href="#method-i-multiply">#multiply</a>
+    <li ><a href="#method-i-num_evaluation">#num_evaluation</a>
+    <li ><a href="#method-i-pass_control">#pass_control</a>
+    <li ><a href="#method-i-print_books">#print_books</a>
+    <li ><a href="#method-i-print_config">#print_config</a>
+    <li ><a href="#method-i-print_message">#print_message</a>
+    <li ><a href="#method-i-print_products_times">#print_products_times</a>
+    <li ><a href="#method-i-product_of_greater_index">#product_of_greater_index</a>
+    <li ><a href="#method-i-rate_my_food">#rate_my_food</a>
+    <li ><a href="#method-i-return_puts_nil">#return_puts_nil</a>
+    <li ><a href="#method-i-return_string">#return_string</a>
+    <li ><a href="#method-i-sel_che">#sel_che</a>
+    <li ><a href="#method-i-separate_words">#separate_words</a>
+    <li ><a href="#method-i-speak_the_truth">#speak_the_truth</a>
+    <li ><a href="#method-i-subtract">#subtract</a>
+    <li ><a href="#method-i-sum">#sum</a>
+    <li ><a href="#method-i-talk_about">#talk_about</a>
+    <li ><a href="#method-i-talk_about_proc">#talk_about_proc</a>
+    <li ><a href="#method-i-who_am_i">#who_am_i</a>
+    <li ><a href="#method-i-who_are_u">#who_are_u</a>
+    <li ><a href="#method-i-word_count">#word_count</a>
+    <li ><a href="#method-i-word_count_refactor">#word_count_refactor</a>
+    <li ><a href="#method-i-word_count_refactoring">#word_count_refactoring</a>
+    <li ><a href="#method-i-year_calculator">#year_calculator</a>
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Object">
+  <h1 id="class-Object" class="class">
+    class Object
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  <section id="5Buntitled-5D" class="documentation-section">
+
+
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+        <dt id="MY_NAME">MY_NAME
+        <dd><p>constants In Ruby, constants are variables that hold a value that should not change once set. By convention, constants are written in all uppercase letters with words separated by underscores.</p>
+        <dt id="MY_SCHOOL">MY_SCHOOL
+        <dd><p>Freezing Constants</p>
+
+<p>To prevent modification of the content of a constant, you can use the freeze method. This makes the object immutable.</p>
+      </dl>
+    </section>
+
+
+
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+      <div id="method-c-new" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File Bonus/why_instance_method.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>
+  <span class="ruby-ivar">@amount</span> = <span class="ruby-value">5000</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+      <div id="method-i-a" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">a</span><span
+              class="method-args">(a, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>[[“A”, 1], [“B”, 2], [“C”, 3], [“D”, 4], [“E”, 5], [“F”, 6], [“G”, 7], [“H”, 8], [“I”, 9], [“J”, 10], [“K”, 11], [“L”, 12], [“M”, 13], [“N”, 14], [“O”, 15], [“P”, nil], [“Q”, nil], [“R”, nil], [“S”, nil],</p>
+<dl class="rdoc-list label-list"><dt>“T”, nil], [“U”, nil], [“V”, nil], [“W”, nil], [“X”, nil], [“Y”, nil], [“Z”, nil]
+<dd></dd></dl>
+
+          <div class="method-source-code" id="a-source">
+            <pre><span class="ruby-comment"># File Bonus/Bonus.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">a</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">a</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">b</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-add_space_before_capitals" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">add_space_before_capitals</span><span
+              class="method-args">(text)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>To create a method that adds a space before each capitalized letter in a string, you can use Ruby’s gsub method with a regular expression. Here’s a method that does this:</p>
+
+          <div class="method-source-code" id="add_space_before_capitals-source">
+            <pre><span class="ruby-comment"># File Bonus/Bonus.rb, line 178</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">add_space_before_capitals</span>(<span class="ruby-identifier">text</span>)
+  <span class="ruby-identifier">text</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/([A-Z])/</span>, <span class="ruby-string">&#39; \1&#39;</span>).<span class="ruby-identifier">strip</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-adv_custom_min" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">adv_custom_min</span><span
+              class="method-args">(arr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>adv  min and max</p>
+
+          <div class="method-source-code" id="adv_custom_min-source">
+            <pre><span class="ruby-comment"># File 99_max_min_arr.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">adv_custom_min</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-identifier">min</span> = <span class="ruby-identifier">arr</span>[<span class="ruby-value">0</span>]
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">min</span> = <span class="ruby-identifier">value</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">value</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">min</span> }
+  <span class="ruby-node">&quot;#{min } is the min value&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-bake_cookies" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">bake_cookies</span><span
+              class="method-args">() { || ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>EXAMPLE 3 Imagine you are baking cookies, and you have a friend helping you. You are the main baker, and your friend is your assistant. You tell your friend to do some tasks at certain points while you are mixing the dough.</p>
+
+<p>Here’s how it works:</p>
+
+<pre>You (the main baker) are like the method in Ruby.
+Your friend (the assistant) is like the block of code you pass to the method.
+Yield is like you telling your friend, &quot;Hey, do this task now.&quot;</pre>
+
+<p>So, you start mixing the dough, and when you need help, you say “Yield” to your friend, who then does the task you assigned (like adding chocolate chips or sprinkling sugar).</p>
+
+<p>In Ruby, when you use yield inside a method, it pauses the method and runs the block of code provided. Once the block finishes, the method continues from where it left off.</p>
+
+<p>Here’s a simple example in Ruby terms:</p>
+
+          <div class="method-source-code" id="bake_cookies-source">
+            <pre><span class="ruby-comment"># File 149_Yield_keyword.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">bake_cookies</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Start mixing the dough.&quot;</span>
+  <span class="ruby-keyword">yield</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Put the dough in the oven.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-bake_cookies_again" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">bake_cookies_again</span><span
+              class="method-args">() { || ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="bake_cookies_again-source">
+            <pre><span class="ruby-comment"># File 149_Yield_keyword.rb, line 47</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">bake_cookies_again</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Start mixing the dough.&quot;</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+    <span class="ruby-keyword">yield</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;No extra task provided.&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Put the dough in the oven.&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-calculate" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">calculate</span><span
+              class="method-args">(a, b, operation)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="calculate-source">
+            <pre><span class="ruby-comment"># File 51_nested_methods.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">calculate</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">operation</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">operation</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:sum</span>
+    <span class="ruby-identifier">sum</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:subtract</span>
+    <span class="ruby-identifier">subtract</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-keyword">when</span> <span class="ruby-value">:multiply</span>
+    <span class="ruby-identifier">multiply</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-string">&quot;Invalid operation&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-calculate_total_2" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">calculate_total_2</span><span
+              class="method-args">(info)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="calculate_total_2-source">
+            <pre><span class="ruby-comment"># File 143_hashes_as_method_argu.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">calculate_total_2</span>(<span class="ruby-identifier">info</span>)
+  <span class="ruby-identifier">tax_amount</span> = <span class="ruby-identifier">info</span>[<span class="ruby-value">:price</span>] <span class="ruby-operator">*</span> <span class="ruby-identifier">info</span>[<span class="ruby-value">:tax</span>]
+  <span class="ruby-identifier">tip_amount</span> = <span class="ruby-identifier">info</span>[<span class="ruby-value">:price</span>] <span class="ruby-operator">*</span> <span class="ruby-identifier">info</span>[<span class="ruby-value">:tip</span>]
+
+  <span class="ruby-identifier">info</span>[<span class="ruby-value">:price</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">tip_amount</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">tax_amount</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-categorize_person" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">categorize_person</span><span
+              class="method-args">(age, is_student, is_employed)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="categorize_person-source">
+            <pre><span class="ruby-comment"># File 47_multiple_condition.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">categorize_person</span>(<span class="ruby-identifier">age</span>, <span class="ruby-identifier">is_student</span>, <span class="ruby-identifier">is_employed</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">age</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">18</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You are a minor.&quot;</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">age</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">18</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">age</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value">22</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">is_student</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You are a college student.&quot;</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">age</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">22</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">is_employed</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You are an employed adult.&quot;</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">age</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">22</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">is_employed</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You are an unemployed adult.&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Your situation doesn&#39;t match any specific category.&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-check_method" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">check_method</span><span
+              class="method-args">(objects, method_name)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="check_method-source">
+            <pre><span class="ruby-comment"># File 190_CCLASSES/26_Exlusive_instance_mthd.rb, line 71</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">check_method</span>(<span class="ruby-identifier">objects</span>, <span class="ruby-identifier">method_name</span>)
+    <span class="ruby-identifier">objects</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">obj</span><span class="ruby-operator">|</span> <span class="ruby-identifier">obj</span>.<span class="ruby-identifier">methods</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">method_name</span>) }
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-check_weekend" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">check_weekend</span><span
+              class="method-args">(day)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="check_weekend-source">
+            <pre><span class="ruby-comment"># File 162_predicate_mthd_time.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">check_weekend</span>(<span class="ruby-identifier">day</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">day</span>.<span class="ruby-identifier">saturday?</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">day</span>.<span class="ruby-identifier">sunday?</span>
+      <span class="ruby-node">&quot;#{day} is a weekend&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-node">&quot;#{day} is a weekday&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-convert" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">convert</span><span
+              class="method-args">(dollars, &amp;currency)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="convert-source">
+            <pre><span class="ruby-comment"># File 159_lambda_efficiency.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">convert</span>(<span class="ruby-identifier">dollars</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">currency</span>)
+  <span class="ruby-identifier">currency</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">dollars</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">dollars</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Numeric</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-count_and_remove_duplicates" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">count_and_remove_duplicates</span><span
+              class="method-args">(arr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="count_and_remove_duplicates-source">
+            <pre><span class="ruby-comment"># File Bonus/Bonus.rb, line 160</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">count_and_remove_duplicates</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-identifier">element_counts</span> = <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">tally</span>
+  <span class="ruby-identifier">duplicates</span> = <span class="ruby-identifier">element_counts</span>.<span class="ruby-identifier">select</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">_</span>, <span class="ruby-identifier">count</span><span class="ruby-operator">|</span> <span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">1</span> }.<span class="ruby-identifier">keys</span>
+
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Elements that appear more than once: #{duplicates}&quot;</span>
+
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">reject</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">fruit</span><span class="ruby-operator">|</span> <span class="ruby-identifier">duplicates</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">fruit</span>) }
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-cubes" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">cubes</span><span
+              class="method-args">(array)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="cubes-source">
+            <pre><span class="ruby-comment"># File 92_map_n_collect.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">cubes</span>(<span class="ruby-identifier">array</span>)
+  <span class="ruby-identifier">array</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">cube</span><span class="ruby-operator">|</span> <span class="ruby-identifier">cube</span> <span class="ruby-operator">**</span> <span class="ruby-value">3</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_compact" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_compact</span><span
+              class="method-args">(array)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>custom method</p>
+
+          <div class="method-source-code" id="custom_compact-source">
+            <pre><span class="ruby-comment"># File 120_compact_mthd.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_compact</span>(<span class="ruby-identifier">array</span>)
+  <span class="ruby-identifier">final</span> = []
+  <span class="ruby-identifier">array</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">num</span>.<span class="ruby-identifier">nil?</span>
+      <span class="ruby-keyword">next</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">final</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">num</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">final</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_concat" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_concat</span><span
+              class="method-args">(arr1, arr2)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>pairing index numbers from both arrays p num1.zip(num2)</p>
+
+          <div class="method-source-code" id="custom_concat-source">
+            <pre><span class="ruby-comment"># File 98_concat_on_array.rb, line 13</span>
+<span class="ruby-keyword">def</span>  <span class="ruby-identifier ruby-title">custom_concat</span>(<span class="ruby-identifier">arr1</span>, <span class="ruby-identifier">arr2</span>)
+  <span class="ruby-identifier">arr2</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">elem</span><span class="ruby-operator">|</span> <span class="ruby-identifier">arr1</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">elem</span> }
+  <span class="ruby-identifier">arr1</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_each" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_each</span><span
+              class="method-args">(arr) { |arr| ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="custom_each-source">
+            <pre><span class="ruby-comment"># File 153_CUSTOM_EACH.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_each</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">length</span>
+    <span class="ruby-keyword">yield</span>(<span class="ruby-identifier">arr</span>[<span class="ruby-identifier">i</span>])
+    <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_end_with" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_end_with</span><span
+              class="method-args">(string, substring)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>custom end_with</p>
+
+          <div class="method-source-code" id="custom_end_with-source">
+            <pre><span class="ruby-comment"># File 174_startwith?_endwithh?.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_end_with</span>(<span class="ruby-identifier">string</span>, <span class="ruby-identifier">substring</span>)
+      <span class="ruby-identifier">string</span>[<span class="ruby-operator">-</span><span class="ruby-identifier">substring</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">substring</span>
+    <span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_first" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_first</span><span
+              class="method-args">(arr, num = 0)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Exercise</p>
+
+          <div class="method-source-code" id="custom_first-source">
+            <pre><span class="ruby-comment"># File 77_first_last_arr.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_first</span>(<span class="ruby-identifier">arr</span>, <span class="ruby-identifier">num</span> = <span class="ruby-value">0</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">arr</span>[<span class="ruby-value">0</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">num</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">arr</span>[<span class="ruby-value">0</span>, <span class="ruby-identifier">num</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_include" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_include</span><span
+              class="method-args">(string, substring)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="custom_include-source">
+            <pre><span class="ruby-comment"># File 175_include?_custom.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_include</span>(<span class="ruby-identifier">string</span>, <span class="ruby-identifier">substring</span>)
+  <span class="ruby-identifier">len</span> = <span class="ruby-identifier">substring</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-identifier">string</span>.<span class="ruby-identifier">chars</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">char</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">string</span>[<span class="ruby-identifier">index</span>, <span class="ruby-identifier">len</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">substring</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">false</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_index" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_index</span><span
+              class="method-args">(string, substring)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Exercise</p>
+
+          <div class="method-source-code" id="custom_index-source">
+            <pre><span class="ruby-comment"># File 109_index_rindex.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_index</span>(<span class="ruby-identifier">string</span>, <span class="ruby-identifier">substring</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">unless</span>  <span class="ruby-identifier">string</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">substring</span>)
+  <span class="ruby-identifier">len</span> = <span class="ruby-identifier">substring</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-identifier">string</span>.<span class="ruby-identifier">chars</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">char</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">sequence</span> = <span class="ruby-identifier">string</span>[<span class="ruby-identifier">i</span>, <span class="ruby-identifier">len</span>]
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">sequence</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">substring</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_intersection" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_intersection</span><span
+              class="method-args">(arr1, arr2)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="custom_intersection-source">
+            <pre><span class="ruby-comment"># File 128_arr_intersection.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_intersection</span>(<span class="ruby-identifier">arr1</span>, <span class="ruby-identifier">arr2</span>)
+  <span class="ruby-identifier">final</span> = []
+  <span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">uniq</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span> <span class="ruby-identifier">element</span> <span class="ruby-operator">|</span>  <span class="ruby-identifier">final</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">element</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">arr2</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">element</span>)}
+  <span class="ruby-identifier">final</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_join" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_join</span><span
+              class="method-args">(array, delimiter = &quot;&quot;)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="custom_join-source">
+            <pre><span class="ruby-comment"># File 108_join_method.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_join</span>(<span class="ruby-identifier">array</span>, <span class="ruby-identifier">delimiter</span> = <span class="ruby-string">&quot;&quot;</span>)
+  <span class="ruby-identifier">string</span> = <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-identifier">last_index</span> = <span class="ruby-identifier">array</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">array</span>.<span class="ruby-identifier">each_with_index</span>  <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">element</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">string</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">element</span>
+    <span class="ruby-comment"># string &lt;&lt; delimiter unless (index == array.length - 1)</span>
+    <span class="ruby-identifier">string</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">delimiter</span> <span class="ruby-keyword">unless</span> (<span class="ruby-identifier">index</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">last_index</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">string</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_last" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_last</span><span
+              class="method-args">(arr, num = 0)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>last</p>
+
+          <div class="method-source-code" id="custom_last-source">
+            <pre><span class="ruby-comment"># File 77_first_last_arr.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_last</span>(<span class="ruby-identifier">arr</span>, <span class="ruby-identifier">num</span> = <span class="ruby-value">0</span>)
+ <span class="ruby-keyword">return</span> <span class="ruby-identifier">arr</span>[<span class="ruby-value">-1</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">num</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">arr</span>[<span class="ruby-operator">-</span><span class="ruby-identifier">num</span>, <span class="ruby-identifier">num</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_max" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_max</span><span
+              class="method-args">(arr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>custom method to return max</p>
+
+          <div class="method-source-code" id="custom_max-source">
+            <pre><span class="ruby-comment"># File 99_max_min_arr.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_max</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-identifier">sorted_arr</span> = []
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">elem</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">conv_to_downcase</span> = <span class="ruby-identifier">elem</span>.<span class="ruby-identifier">downcase</span>
+    <span class="ruby-identifier">sorted_arr</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">conv_to_downcase</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">sorted_arr</span>[<span class="ruby-value">-1</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_max_num" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_max_num</span><span
+              class="method-args">(arr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="custom_max_num-source">
+            <pre><span class="ruby-comment"># File 99_max_min_arr.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_max_num</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">sort</span>[<span class="ruby-value">-1</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_merge" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_merge</span><span
+              class="method-args">(hash1, hash2)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="custom_merge-source">
+            <pre><span class="ruby-comment"># File 146_merge_mth.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_merge</span>(<span class="ruby-identifier">hash1</span>, <span class="ruby-identifier">hash2</span>)
+  <span class="ruby-identifier">new_hash</span> = <span class="ruby-identifier">hash1</span>.<span class="ruby-identifier">dup</span> <span class="ruby-comment"># Step 1: Duplicate the first hash to avoid changing the original hash</span>
+  <span class="ruby-identifier">hash2</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-comment"># Step 2: Iterate over each key-value pair in the second hash</span>
+    <span class="ruby-identifier">new_hash</span>[<span class="ruby-identifier">key</span>] = <span class="ruby-identifier">value</span>   <span class="ruby-comment"># Step 3: Add/overwrite the key-value pair in the new hash</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">new_hash</span>   <span class="ruby-comment"># Step 4: Return the merged hash</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_min_num" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_min_num</span><span
+              class="method-args">(arr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>custom method to return min</p>
+
+          <div class="method-source-code" id="custom_min_num-source">
+            <pre><span class="ruby-comment"># File 99_max_min_arr.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_min_num</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">sort</span>[<span class="ruby-value">0</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_multiply" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_multiply</span><span
+              class="method-args">(arr, num)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="custom_multiply-source">
+            <pre><span class="ruby-comment"># File 125_multiply_an_arr.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_multiply</span>(<span class="ruby-identifier">arr</span>, <span class="ruby-identifier">num</span>)
+  <span class="ruby-identifier">result</span> = []
+  <span class="ruby-identifier">num</span>.<span class="ruby-identifier">times</span> {<span class="ruby-identifier">arr</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">elem</span><span class="ruby-operator">|</span> <span class="ruby-identifier">result</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">elem</span> } }
+  <span class="ruby-identifier">result</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_squeeze" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_squeeze</span><span
+              class="method-args">(sentence)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>refactor</p>
+
+          <div class="method-source-code" id="custom_squeeze-source">
+            <pre><span class="ruby-comment"># File 111_squeeze_mthd.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_squeeze</span>(<span class="ruby-identifier">sentence</span>)
+  <span class="ruby-identifier">store_fruits</span> = <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-identifier">chars</span> = <span class="ruby-identifier">sentence</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;&quot;</span>)
+  <span class="ruby-identifier">chars</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">char</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+   <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">chars</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>] <span class="ruby-operator">?</span> <span class="ruby-keyword">next</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">store_fruits</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">store_fruits</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_subtraction" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_subtraction</span><span
+              class="method-args">(arr1, arr2)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="custom_subtraction-source">
+            <pre><span class="ruby-comment"># File 127_remove_arr_minus.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_subtraction</span>(<span class="ruby-identifier">arr1</span>, <span class="ruby-identifier">arr2</span>)
+  <span class="ruby-identifier">final</span> = []
+  <span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">final</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">arr2</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">i</span>) }
+  <span class="ruby-identifier">final</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_union" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_union</span><span
+              class="method-args">(arr1, arr2)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>solution 1</p>
+
+          <div class="method-source-code" id="custom_union-source">
+            <pre><span class="ruby-comment"># File 126_arr_union_combine.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_union</span>(<span class="ruby-identifier">arr1</span>, <span class="ruby-identifier">arr2</span>)
+  <span class="ruby-identifier">sub_arr</span> = <span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">zip</span>(<span class="ruby-identifier">arr2</span>)
+  <span class="ruby-identifier">merge_arr</span> = <span class="ruby-identifier">sub_arr</span>.<span class="ruby-identifier">flatten</span>
+  <span class="ruby-identifier">clean_duplicate</span> = []
+  <span class="ruby-identifier">merge_arr</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">elem</span><span class="ruby-operator">|</span> <span class="ruby-identifier">clean_duplicate</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">elem</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">clean_duplicate</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">elem</span>)}
+<span class="ruby-identifier">clean_duplicate</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_union2" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_union2</span><span
+              class="method-args">(arr1, arr2)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>solution 2</p>
+
+          <div class="method-source-code" id="custom_union2-source">
+            <pre><span class="ruby-comment"># File 126_arr_union_combine.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_union2</span>(<span class="ruby-identifier">arr1</span>, <span class="ruby-identifier">arr2</span>)
+<span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">dup</span>.<span class="ruby-identifier">concat</span>(<span class="ruby-identifier">arr2</span>).<span class="ruby-identifier">uniq</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_uniq" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_uniq</span><span
+              class="method-args">(arr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>uniq removes duplicates</p>
+
+          <div class="method-source-code" id="custom_uniq-source">
+            <pre><span class="ruby-comment"># File 119_uniq_method.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_uniq</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-identifier">clean_duplicate</span> = []
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">elem</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">clean_duplicate</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">elem</span>
+      <span class="ruby-keyword">next</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">clean_duplicate</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">elem</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">clean_duplicate</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_uniq_refactor" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_uniq_refactor</span><span
+              class="method-args">(arr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>refactor</p>
+
+          <div class="method-source-code" id="custom_uniq_refactor-source">
+            <pre><span class="ruby-comment"># File 119_uniq_method.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_uniq_refactor</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-identifier">clean_duplicate</span> = []
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">elem</span><span class="ruby-operator">|</span> <span class="ruby-identifier">clean_duplicate</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">elem</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">clean_duplicate</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">elem</span>)}
+  <span class="ruby-identifier">clean_duplicate</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-custom_zip" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">custom_zip</span><span
+              class="method-args">(arr, arr2)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>[[“Musa”, “Apples”, “sweet”], [“Mauwa”, “Bananas”, “bitter”],</p>
+<dl class="rdoc-list label-list"><dt>“Afra”, “Grapes”, “bitter”], [“Ayshe”, “Oranges”, “sweet”]
+<dd></dd></dl>
+
+          <div class="method-source-code" id="custom_zip-source">
+            <pre><span class="ruby-comment"># File 123_zip_mthd.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">custom_zip</span>(<span class="ruby-identifier">arr</span>, <span class="ruby-identifier">arr2</span>)
+  <span class="ruby-identifier">paired</span> = []
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">item</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">paired</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-identifier">item</span>, <span class="ruby-identifier">arr2</span>[<span class="ruby-identifier">index</span>]]
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">paired</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-del_str_letter" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">del_str_letter</span><span
+              class="method-args">(str, delete_char)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="del_str_letter-source">
+            <pre><span class="ruby-comment"># File 113_delete.rb, line 9</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">del_str_letter</span>(<span class="ruby-identifier">str</span>, <span class="ruby-identifier">delete_char</span>)
+  <span class="ruby-identifier">new_str</span> = <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-identifier">str</span>.<span class="ruby-identifier">each_char</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">char</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">unless</span> <span class="ruby-identifier">delete_char</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">char</span>)
+      <span class="ruby-identifier">new_str</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">char</span>
+      <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">new_str</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-diet" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">diet</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>2nd DIFF</p>
+
+          <div class="method-source-code" id="diet-source">
+            <pre><span class="ruby-comment"># File 157_lambdas.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">diet</span>
+  <span class="ruby-identifier">status</span> = <span class="ruby-identifier">lambda</span> {<span class="ruby-keyword">return</span> <span class="ruby-string">&quot;You gave up&quot;</span>}
+  <span class="ruby-identifier">status</span>.<span class="ruby-identifier">call</span>
+  <span class="ruby-string">&quot;You completed the diet&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-diet_proc" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">diet_proc</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>while proc</p>
+
+          <div class="method-source-code" id="diet_proc-source">
+            <pre><span class="ruby-comment"># File 158_diff_btw_lamda_proc.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">diet_proc</span>
+  <span class="ruby-identifier">status</span> = <span class="ruby-constant">Proc</span>.<span class="ruby-identifier">new</span> {<span class="ruby-keyword">return</span> <span class="ruby-string">&quot;You gave up&quot;</span>}
+  <span class="ruby-identifier">status</span>.<span class="ruby-identifier">call</span>
+  <span class="ruby-string">&quot;You completed the diet&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-each" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">each</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="each-source">
+            <pre><span class="ruby-comment"># File 191_MODULES/mixins/tempCodeRunnerFile.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">each</span>
+    <span class="ruby-comment">#     snacks.each do |snack|</span>
+    <span class="ruby-comment">#         yield snack</span>
+    <span class="ruby-comment">#     end</span>
+</pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-even_and_odds" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">even_and_odds</span><span
+              class="method-args">(array)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>OR</p>
+
+          <div class="method-source-code" id="even_and_odds-source">
+            <pre><span class="ruby-comment"># File 87_each_method.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">even_and_odds</span>(<span class="ruby-identifier">array</span>)
+  <span class="ruby-identifier">evens</span> = []
+  <span class="ruby-identifier">odds</span> = []
+  <span class="ruby-identifier">array</span>.<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">number</span><span class="ruby-operator">|</span> <span class="ruby-identifier">number</span>.<span class="ruby-identifier">even?</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">evens</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">number</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">odds</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">number</span> }
+
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">evens</span>
+  <span class="ruby-identifier">p</span> <span class="ruby-identifier">odds</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-even_or_odd" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">even_or_odd</span><span
+              class="method-args">(num)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Exp 3</p>
+
+          <div class="method-source-code" id="even_or_odd-source">
+            <pre><span class="ruby-comment"># File 49_ternary_operator.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">even_or_odd</span>(<span class="ruby-identifier">num</span>)
+  <span class="ruby-identifier">num</span>.<span class="ruby-identifier">even?</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">num</span>.<span class="ruby-identifier">even?</span> <span class="ruby-operator">?</span> <span class="ruby-string">&quot;even&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;odd&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-find_day_of_year_by_number" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">find_day_of_year_by_number</span><span
+              class="method-args">(number)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>find day of year</p>
+
+          <div class="method-source-code" id="find_day_of_year_by_number-source">
+            <pre><span class="ruby-comment"># File 163_+_-time.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">find_day_of_year_by_number</span>(<span class="ruby-identifier">number</span>)
+    <span class="ruby-identifier">current_date</span>  = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2024</span>, <span class="ruby-value">1</span>, <span class="ruby-value">1</span>)
+    <span class="ruby-identifier">one_day</span> =  <span class="ruby-value">60</span> <span class="ruby-operator">*</span> <span class="ruby-value">60</span> <span class="ruby-operator">*</span> <span class="ruby-value">24</span>
+
+    <span class="ruby-keyword">until</span> <span class="ruby-identifier">current_date</span>.<span class="ruby-identifier">yday</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">number</span>
+        <span class="ruby-identifier">current_date</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">one_day</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">current_date</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-fizz_buzz" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">fizz_buzz</span><span
+              class="method-args">(num)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>solution  2</p>
+
+          <div class="method-source-code" id="fizz_buzz-source">
+            <pre><span class="ruby-comment"># File 57_fizz_buzz.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fizz_buzz</span>(<span class="ruby-identifier">num</span>)
+  <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+  <span class="ruby-keyword">until</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">num</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">%</span> <span class="ruby-value">15</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;#{i} is a fizzbuzz&quot;</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">%</span> <span class="ruby-value">3</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;#{i} is a fizz&quot;</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">%</span> <span class="ruby-value">5</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;#{i} is a buzz&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-identifier">i</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-generate_random_num" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">generate_random_num</span><span
+              class="method-args">(guess)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="generate_random_num-source">
+            <pre><span class="ruby-comment"># File 64_geneerate_random_num.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">generate_random_num</span>(<span class="ruby-identifier">guess</span>)
+  <span class="ruby-identifier">num</span> = <span class="ruby-value">8</span>
+  <span class="ruby-identifier">guess</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-identifier">guess</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">guess</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">num</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;You got is right&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;your guess was #{guess}: You got is wrong&quot;</span>
+    <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-get_keys_from_hash" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">get_keys_from_hash</span><span
+              class="method-args">(hash)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Custom key and value</p>
+
+          <div class="method-source-code" id="get_keys_from_hash-source">
+            <pre><span class="ruby-comment"># File 137_itterate_hash_recmded.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_keys_from_hash</span>(<span class="ruby-identifier">hash</span>)
+  <span class="ruby-identifier">keys</span> = []
+  <span class="ruby-identifier">hash</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">keys</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">key</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">keys</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-get_values_from_hash" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">get_values_from_hash</span><span
+              class="method-args">(hash)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="get_values_from_hash-source">
+            <pre><span class="ruby-comment"># File 137_itterate_hash_recmded.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_values_from_hash</span>(<span class="ruby-identifier">hash</span>)
+  <span class="ruby-identifier">values</span> = []
+  <span class="ruby-identifier">hash</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">values</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">value</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">values</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-greeter" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">greeter</span><span
+              class="method-args">() { || ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="greeter-source">
+            <pre><span class="ruby-comment"># File 154_PROC_ll.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">greeter</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I&#39;m inside the greeter&quot;</span>
+  <span class="ruby-keyword">yield</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-introduce_myself" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">introduce_myself</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="introduce_myself-source">
+            <pre><span class="ruby-comment"># File 41_local_variable.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">introduce_myself</span>
+  <span class="ruby-identifier">expression</span> = <span class="ruby-string">&quot;I am a full_stack dev &#39;Local&#39;&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">expression</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-list_names" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">list_names</span><span
+              class="method-args">(name, stack, &amp;name_proc)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="list_names-source">
+            <pre><span class="ruby-comment"># File Bonus/advance_challenge.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">list_names</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">stack</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">name_proc</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">stack</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-string">&#39;f&#39;</span>)
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Let&#39;s list what #{name} has to learn to become a #{stack}&quot;</span>
+    <span class="ruby-identifier">name_proc</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">stack</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;The stack only for frontend. No learning path to display.&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-membership_status" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">membership_status</span><span
+              class="method-args">(user = &quot;Regular&quot;, color)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="membership_status-source">
+            <pre><span class="ruby-comment"># File 50_default_optionl_permtr.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">membership_status</span>(<span class="ruby-identifier">user</span> = <span class="ruby-string">&quot;Regular&quot;</span>, <span class="ruby-identifier">color</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">user</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;Regular&quot;</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Regular_Member&quot;</span>
+    <span class="ruby-keyword">else</span>  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;#{color} #{user}&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">color</span>
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-multiple_pass" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">multiple_pass</span><span
+              class="method-args">() { || ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="multiple_pass-source">
+            <pre><span class="ruby-comment"># File 149_Yield_keyword.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">multiple_pass</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Inside the method&quot;</span>
+  <span class="ruby-keyword">yield</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Back inside the method&quot;</span>
+  <span class="ruby-keyword">yield</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-multiply" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">multiply</span><span
+              class="method-args">(*arr) { |arr| ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="multiply-source">
+            <pre><span class="ruby-comment"># File 152_yield_as_argument.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">multiply</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">arr</span>)
+  <span class="ruby-keyword">yield</span> <span class="ruby-identifier">arr</span>  <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-num_evaluation" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">num_evaluation</span><span
+              class="method-args">(num1, num2, num3) { |num1, num2, num3| ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Muhammad is a fullstack developer Hauwa is a software developer Zainab is a Doctor</p>
+
+          <div class="method-source-code" id="num_evaluation-source">
+            <pre><span class="ruby-comment"># File 152_yield_as_argument.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">num_evaluation</span>(<span class="ruby-identifier">num1</span>, <span class="ruby-identifier">num2</span>, <span class="ruby-identifier">num3</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Inside the method&quot;</span>
+  <span class="ruby-keyword">yield</span>( <span class="ruby-identifier">num1</span>, <span class="ruby-identifier">num2</span>, <span class="ruby-identifier">num3</span> )<span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-pass_control" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">pass_control</span><span
+              class="method-args">() { || ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="pass_control-source">
+            <pre><span class="ruby-comment"># File 149_Yield_keyword.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">pass_control</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;This is inside the Method&quot;</span>
+  <span class="ruby-keyword">yield</span> <span class="ruby-comment"># Pass control  from method to block</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Now I&#39;m Back inside the method&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-print_books" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">print_books</span><span
+              class="method-args">(books)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="print_books-source">
+            <pre><span class="ruby-comment"># File 40_methods.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">print_books</span>(<span class="ruby-identifier">books</span>)
+  <span class="ruby-identifier">e_books</span> = []
+  <span class="ruby-identifier">books</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">book</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">book</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-string">&quot;e-&quot;</span>)
+      <span class="ruby-identifier">e_books</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">book</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">e_books</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-print_config" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">print_config</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="print_config-source">
+            <pre><span class="ruby-comment"># File 172_load_method.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">print_config</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;App Name: #{$config[:app_name]}&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Version: #{$config[:version]}&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Debug Mode: #{$config[:debug_mode]}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-print_message" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">print_message</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Exercise 1</p>
+
+          <div class="method-source-code" id="print_message-source">
+            <pre><span class="ruby-comment"># File 40_methods.rb, line 2</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">print_message</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Hello World&quot;</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I am happy to be ruby developer&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-print_products_times" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">print_products_times</span><span
+              class="method-args">(arr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="print_products_times-source">
+            <pre><span class="ruby-comment"># File Bonus/Bonus.rb, line 196</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">print_products_times</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-identifier">final</span> = []
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">product</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">final</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot; #{ product}&quot;</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">product</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">final</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-product_of_greater_index" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">product_of_greater_index</span><span
+              class="method-args">(arr)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="product_of_greater_index-source">
+            <pre><span class="ruby-comment"># File 91_challenges.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">product_of_greater_index</span>(<span class="ruby-identifier">arr</span>)
+  <span class="ruby-identifier">arr</span>.<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">num</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">num</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">index</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-identifier">num</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">index</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;skip&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-rate_my_food" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">rate_my_food</span><span
+              class="method-args">(food)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="rate_my_food-source">
+            <pre><span class="ruby-comment"># File 52_case_statement.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">rate_my_food</span>(<span class="ruby-identifier">food</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">food</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Steak&quot;</span>
+    <span class="ruby-string">&quot;Pass the  steak sauce! that&#39;s delicious&quot;</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Sushi&quot;</span>
+    <span class="ruby-string">&quot;Great  choice! my favorite food&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-string">&quot;I don&#39;t know what you food&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-return_puts_nil" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">return_puts_nil</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="return_puts_nil-source">
+            <pre><span class="ruby-comment"># File 44_return_of_puts.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">return_puts_nil</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;I will return nil value&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-return_string" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">return_string</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="return_string-source">
+            <pre><span class="ruby-comment"># File 44_return_of_puts.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">return_string</span>
+  <span class="ruby-value">5</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-sel_che" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">sel_che</span><span
+              class="method-args">(channels)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="sel_che-source">
+            <pre><span class="ruby-comment"># File 87_each_method.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">sel_che</span>(<span class="ruby-identifier">channels</span>)
+<span class="ruby-identifier">channels</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">channel</span><span class="ruby-operator">|</span>
+  <span class="ruby-identifier">new_channel</span> = []
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">channel</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;cbs&quot;</span>
+    <span class="ruby-identifier">new_channel</span>.<span class="ruby-identifier">push</span>(<span class="ruby-identifier">channel</span>)
+  <span class="ruby-keyword">end</span>
+   <span class="ruby-identifier">new_channel</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-separate_words" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">separate_words</span><span
+              class="method-args">(words)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="separate_words-source">
+            <pre><span class="ruby-comment"># File 110_insert.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">separate_words</span>(<span class="ruby-identifier">words</span>)
+  <span class="ruby-identifier">fixed_words</span> = <span class="ruby-string">&quot;&quot;</span>
+  <span class="ruby-identifier">words</span>.<span class="ruby-identifier">each_char</span>.<span class="ruby-identifier">with_index</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">char</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">char</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">char</span>.<span class="ruby-identifier">upcase</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">index</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">words</span>[<span class="ruby-identifier">index</span><span class="ruby-value">-1</span>] <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;,&quot;</span>
+      <span class="ruby-identifier">fixed_words</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot; &quot;</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">fixed_words</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">fixed_words</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-speak_the_truth" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">speak_the_truth</span><span
+              class="method-args">() { |&quot;Muhammad&quot;| ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="speak_the_truth-source">
+            <pre><span class="ruby-comment"># File 152_yield_as_argument.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">speak_the_truth</span>
+  <span class="ruby-keyword">yield</span> <span class="ruby-string">&quot;Muhammad&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-subtract" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">subtract</span><span
+              class="method-args">(a, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="subtract-source">
+            <pre><span class="ruby-comment"># File 51_nested_methods.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">subtract</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">a</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">b</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-sum" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">sum</span><span
+              class="method-args">(*numbers)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="sum-source">
+            <pre><span class="ruby-comment"># File 116_splat_method.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">sum</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">numbers</span>)
+  <span class="ruby-identifier">sum</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">numbers</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">number</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">number</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">sum</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-talk_about" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">talk_about</span><span
+              class="method-args">(name, &amp;nproc)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="talk_about-source">
+            <pre><span class="ruby-comment"># File 156_mthd_as_proc.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">talk_about</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">nproc</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;let&#39;s talk about #{name}&quot;</span>
+  <span class="ruby-identifier">nproc</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">name</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-talk_about_proc" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">talk_about_proc</span><span
+              class="method-args">(name, &amp;my_proc)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Lets talk about Muhammad as lambda</p>
+
+<pre>wrong number of arguments (given 1, expected 2) (ArgumentError)
+
+PROC EXAMPLE 2</pre>
+
+          <div class="method-source-code" id="talk_about_proc-source">
+            <pre><span class="ruby-comment"># File 157_lambdas.rb, line 89</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">talk_about_proc</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">my_proc</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Lets talk about #{name} as proc&quot;</span>
+  <span class="ruby-identifier">my_proc</span>.<span class="ruby-identifier">call</span>(<span class="ruby-identifier">name</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-who_am_i" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">who_am_i</span><span
+              class="method-args">() { || ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Output: Start mixing the dough. No extra task provided. Put the dough in the oven.</p>
+
+          <div class="method-source-code" id="who_am_i-source">
+            <pre><span class="ruby-comment"># File 149_Yield_keyword.rb, line 70</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">who_am_i</span>
+  <span class="ruby-identifier">adjective</span> = <span class="ruby-keyword">yield</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;I am very #{adjective}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-who_are_u" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">who_are_u</span><span
+              class="method-args">(name) { |name| ... }</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Example 2 (which is more flexible)</p>
+
+          <div class="method-source-code" id="who_are_u-source">
+            <pre><span class="ruby-comment"># File 152_yield_as_argument.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">who_are_u</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-keyword">yield</span> <span class="ruby-identifier">name</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-word_count" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">word_count</span><span
+              class="method-args">(string)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="word_count-source">
+            <pre><span class="ruby-comment"># File 147_CHALLENGE_word_frqcy.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">word_count</span>(<span class="ruby-identifier">string</span>)
+  <span class="ruby-identifier">arr_words</span> = <span class="ruby-identifier">string</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot; &quot;</span>)
+  <span class="ruby-identifier">words_counter</span> = []
+  <span class="ruby-identifier">paired</span> = []
+  <span class="ruby-identifier">arr_words</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">word</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">words_counter</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">arr_words</span>.<span class="ruby-identifier">count</span>(<span class="ruby-identifier">word</span>)
+    <span class="ruby-identifier">paired</span> = <span class="ruby-identifier">arr_words</span>.<span class="ruby-identifier">zip</span>(<span class="ruby-identifier">words_counter</span>).<span class="ruby-identifier">to_h</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">paired</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-word_count_refactor" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">word_count_refactor</span><span
+              class="method-args">(string)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>refactor</p>
+
+          <div class="method-source-code" id="word_count_refactor-source">
+            <pre><span class="ruby-comment"># File 147_CHALLENGE_word_frqcy.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">word_count_refactor</span>(<span class="ruby-identifier">string</span>)
+  <span class="ruby-identifier">string</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot; &quot;</span>).<span class="ruby-identifier">each_with_object</span>(<span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>)) { <span class="ruby-operator">|</span><span class="ruby-identifier">word</span>, <span class="ruby-identifier">hash</span><span class="ruby-operator">|</span> <span class="ruby-identifier">hash</span>[<span class="ruby-identifier">word</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span> }
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-word_count_refactoring" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">word_count_refactoring</span><span
+              class="method-args">(string)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="word_count_refactoring-source">
+            <pre><span class="ruby-comment"># File 147_CHALLENGE_word_frqcy.rb, line 24</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">word_count_refactoring</span>(<span class="ruby-identifier">string</span>)
+  <span class="ruby-identifier">words</span> = <span class="ruby-identifier">string</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot; &quot;</span>).
+    <span class="ruby-identifier">count</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>)
+  <span class="ruby-identifier">words</span>.<span class="ruby-identifier">each</span>  { <span class="ruby-operator">|</span><span class="ruby-identifier">word</span><span class="ruby-operator">|</span> <span class="ruby-identifier">count</span>[<span class="ruby-identifier">word</span>] <span class="ruby-operator">+=</span> <span class="ruby-value">1</span> }
+  <span class="ruby-identifier">count</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-year_calculator" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">year_calculator</span><span
+              class="method-args">(year, month, day)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>p Time.new(2015, 22, 22) # 2015-05-22 00:00:00 +0100</p>
+
+          <div class="method-source-code" id="year_calculator-source">
+            <pre><span class="ruby-comment"># File 160_TIME_OBJECT.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">year_calculator</span>(<span class="ruby-identifier">year</span>, <span class="ruby-identifier">month</span>, <span class="ruby-identifier">day</span>)
+    <span class="ruby-identifier">current_date</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>
+    <span class="ruby-identifier">selected_date</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">year</span>, <span class="ruby-identifier">month</span>, <span class="ruby-identifier">day</span>)
+    <span class="ruby-identifier">age_in_seconds</span> = <span class="ruby-identifier">current_date</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">selected_date</span>
+  
+    <span class="ruby-comment"># Convert age from seconds to years</span>
+    <span class="ruby-identifier">age_in_years</span> = <span class="ruby-identifier">age_in_seconds</span> <span class="ruby-operator">/</span> (<span class="ruby-value">60</span> <span class="ruby-operator">*</span> <span class="ruby-value">60</span> <span class="ruby-operator">*</span> <span class="ruby-value">24</span> <span class="ruby-operator">*</span> <span class="ruby-value">365.25</span>)
+    <span class="ruby-node">&quot;You are #{age_in_years.to_i} years old&quot;</span>
+  <span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.7.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
